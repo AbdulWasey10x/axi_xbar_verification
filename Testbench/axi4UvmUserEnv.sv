@@ -13,10 +13,6 @@ class axi4UvmUserEnv extends uvm_env;
   axi4UvmUserActiveSlaveAgent activeSlave;
   axi4UvmUserActiveMasterAgent activeMaster1;
   axi4UvmUserActiveSlaveAgent activeSlave1;
-//  axi4UvmUserPassiveAgent passiveSlave;
-//  axi4UvmUserPassiveAgent passiveMaster;
-
-
 
   `uvm_component_utils_begin(axi4UvmUserEnv)          
   `uvm_component_utils_end
@@ -82,68 +78,23 @@ class axi4UvmUserEnv extends uvm_env;
       uvm_config_object::set(this,"activeSlave","cfg",activeSlaveCfg); 
     end
 
-    // Passive Slave
-//    passiveSlave = axi4UvmUserPassiveAgent::type_id::create("passiveSlave", this);    
-//    begin
-//      axi4UvmUserConfig passiveSlaveCfg = axi4UvmUserConfig::type_id::create("passiveSlaveCfg");
-//      passiveSlaveCfg.is_active = UVM_PASSIVE;
-//      passiveSlaveCfg.PortType = CDN_AXI_CFG_SLAVE;
-//      passiveSlaveCfg.verbosity = CDN_AXI_CFG_MESSAGEVERBOSITY_LOW;
-//      //passiveSlaveCfg.addToMemorySegments(32'h0,32'h1000,CDN_AXI_CFG_DOMAIN_NON_SHAREABLE);
-//      //passiveSlaveCfg.addToMemorySegments(32'h2000,32'h3000,CDN_AXI_CFG_DOMAIN_NON_SHAREABLE);
-//      
-//      passiveSlaveCfg.addToMemorySegments(64'h0,64'hFFFF,CDN_AXI_CFG_DOMAIN_NON_SHAREABLE);
-//      passiveSlaveCfg.addToMemorySegments(64'h10000,64'h5FFFF,CDN_AXI_CFG_DOMAIN_NON_SHAREABLE);
-//      
-//      passiveSlaveCfg.do_signal_check_only_when_valid = 1;
-//      passiveSlaveCfg.no_changes_in_address_channels_limit = 100;     
-//      passiveSlaveCfg.max_write_bursts_behavior = CDN_AXI_CFG_MAX_WRITE_BURSTS_BEHAVIOR_CONTINUE_TO_SEND;
-//      passiveSlaveCfg.write_acceptance_capability = 6;
-//      passiveSlaveCfg.disable_memory_update_on_write_burst = 0;
-//      passiveSlaveCfg.
-//      passiveSlaveCfg.
-//      passiveSlaveCfg.
-//      uvm_config_object::set(this,"passiveSlave","cfg",passiveSlaveCfg); 
-//    end
-    
-    // Passive Master
-//    passiveMaster = axi4UvmUserPassiveAgent::type_id::create("passiveMaster", this);    
-//    begin
-//      axi4UvmUserConfig passiveMasterCfg = axi4UvmUserConfig::type_id::create("passiveMasterCfg");
-//      passiveMasterCfg.is_active = UVM_PASSIVE;
-//      passiveMasterCfg.PortType = CDN_AXI_CFG_MASTER;
-//      passiveMasterCfg.verbosity = CDN_AXI_CFG_MESSAGEVERBOSITY_LOW;
-//      
-//      //passiveMasterCfg.addToMemorySegments(32'h0,32'h3000,CDN_AXI_CFG_DOMAIN_NON_SHAREABLE);
-//      
-//      passiveMasterCfg.addToMemorySegments(64'h0,64'hFFFF,CDN_AXI_CFG_DOMAIN_NON_SHAREABLE);
-//      passiveMasterCfg.addToMemorySegments(64'h10000,64'h5FFFF,CDN_AXI_CFG_DOMAIN_NON_SHAREABLE);
-//      passiveMasterCfg.no_changes_in_address_channels_limit = 100;
-//      passiveMasterCfg.max_write_bursts_behavior = CDN_AXI_CFG_MAX_WRITE_BURSTS_BEHAVIOR_CONTINUE_TO_SEND;
-//      passiveMasterCfg.write_issuing_capability = 7;
-//      //passiveMasterCfg.
-//      
-//      uvm_config_object::set(this,"passiveMaster","cfg",passiveMasterCfg);       
-//    end
-     
-       // Active Master 1
+     // Active Master 1
     activeMaster1 = axi4UvmUserActiveMasterAgent::type_id::create("activeMaster1", this);
     begin
-      axi4UvmUserConfig activeMasterCfg1 = axi4UvmUserConfig::type_id::create("activeMasterCfg1",this);
-      activeMasterCfg1.is_active = UVM_ACTIVE;
-      activeMasterCfg1.PortType = CDN_AXI_CFG_MASTER;
-      activeMasterCfg1.reset_signals_sim_start = 1;
-      activeMasterCfg1.verbosity = CDN_AXI_CFG_MESSAGEVERBOSITY_LOW;
-//      activeMasterCfg.addToMemorySegments(32'h0,32'h3000,CDN_AXI_CFG_DOMAIN_NON_SHAREABLE);
+      axi4UvmUserConfig activeMasterCfg = axi4UvmUserConfig::type_id::create("activeMasterCfg",this);
+      activeMasterCfg.is_active = UVM_ACTIVE;
+      activeMasterCfg.PortType = CDN_AXI_CFG_MASTER;
+      activeMasterCfg.reset_signals_sim_start = 1;
+      activeMasterCfg.verbosity = CDN_AXI_CFG_MESSAGEVERBOSITY_LOW;
+      //      activeMasterCfg.addToMemorySegments(32'h0,32'h3000,CDN_AXI_CFG_DOMAIN_NON_SHAREABLE);
             
-      activeMasterCfg1.addToMemorySegments(64'h0,64'hFFFF,CDN_AXI_CFG_DOMAIN_NON_SHAREABLE);
-      activeMasterCfg1.addToMemorySegments(64'h10000,64'h5FFFF,CDN_AXI_CFG_DOMAIN_NON_SHAREABLE);
-      activeMasterCfg1.no_changes_in_address_channels_limit = 100;
-      activeMasterCfg1.max_write_bursts_behavior = CDN_AXI_CFG_MAX_WRITE_BURSTS_BEHAVIOR_CONTINUE_TO_SEND;
-      activeMasterCfg1.write_issuing_capability = 7;
+      activeMasterCfg.addToMemorySegments(64'h0,64'hFFFF,CDN_AXI_CFG_DOMAIN_NON_SHAREABLE);
+      activeMasterCfg.addToMemorySegments(64'h10000,64'h5FFFF,CDN_AXI_CFG_DOMAIN_NON_SHAREABLE);
+      activeMasterCfg.no_changes_in_address_channels_limit = 100;
+      activeMasterCfg.max_write_bursts_behavior = CDN_AXI_CFG_MAX_WRITE_BURSTS_BEHAVIOR_CONTINUE_TO_SEND;
+      activeMasterCfg.write_issuing_capability = 7;
       //activeMasterCfg.       
-      uvm_config_object::set(this,"activeMaster1","cfg",activeMasterCfg1); 
-       
+      uvm_config_object::set(this,"activeMaster1","cfg",activeMasterCfg); 
     end
     
       
@@ -171,6 +122,7 @@ class axi4UvmUserEnv extends uvm_env;
       uvm_config_object::set(this,"activeSlave1","cfg",activeSlaveCfg1); 
     end
 
+  
   endfunction : build_phase
   
   virtual task run_phase(uvm_phase phase);
@@ -210,18 +162,6 @@ class axi4UvmUserEnv extends uvm_env;
     //void'(activeMaster.inst.setCallback( DENALI_CDN_AXI_CB_EndedResponse));
     //void'(activeMaster.inst.setCallback( DENALI_CDN_AXI_CB_EndedTransfer));
     
-    // Passive Master
-//    void'(passiveMaster.inst.setCallback( DENALI_CDN_AXI_CB_Error));
-    //void'(passiveMaster.inst.setCallback( DENALI_CDN_AXI_CB_ResetStarted));
-//    void'(passiveMaster.inst.setCallback( DENALI_CDN_AXI_CB_ResetEnded));
-//    void'(passiveMaster.inst.setCallback( DENALI_CDN_AXI_CB_Started));
-    //void'(passiveMaster.inst.setCallback( DENALI_CDN_AXI_CB_StartedAddress));
-    //void'(passiveMaster.inst.setCallback( DENALI_CDN_AXI_CB_StartedResponse));
-    //void'(passiveMaster.inst.setCallback( DENALI_CDN_AXI_CB_StartedTransfer));
-//    void'(passiveMaster.inst.setCallback( DENALI_CDN_AXI_CB_Ended));
-    //void'(passiveMaster.inst.setCallback( DENALI_CDN_AXI_CB_EndedAddress));
-    //void'(passiveMaster.inst.setCallback( DENALI_CDN_AXI_CB_EndedResponse));
-    //void'(passiveMaster.inst.setCallback( DENALI_CDN_AXI_CB_EndedTransfer));
     
     // Active Slave
     void'(activeSlave.inst.setCallback( DENALI_CDN_AXI_CB_Error));
@@ -260,18 +200,6 @@ class axi4UvmUserEnv extends uvm_env;
     //void'(activeMaster.inst.setCallback( DENALI_CDN_AXI_CB_EndedResponse));
     //void'(activeMaster.inst.setCallback( DENALI_CDN_AXI_CB_EndedTransfer));
     
-    // Passive Master
-//    void'(passiveMaster1.inst.setCallback( DENALI_CDN_AXI_CB_Error));
-    //void'(passiveMaster.inst.setCallback( DENALI_CDN_AXI_CB_ResetStarted));
-//    void'(passiveMaster1.inst.setCallback( DENALI_CDN_AXI_CB_ResetEnded));
-//    void'(passiveMaster1.inst.setCallback( DENALI_CDN_AXI_CB_Started));
-    //void'(passiveMaster.inst.setCallback( DENALI_CDN_AXI_CB_StartedAddress));
-    //void'(passiveMaster.inst.setCallback( DENALI_CDN_AXI_CB_StartedResponse));
-    //void'(passiveMaster.inst.setCallback( DENALI_CDN_AXI_CB_StartedTransfer));
-//    void'(passiveMaster1.inst.setCallback( DENALI_CDN_AXI_CB_Ended));
-    //void'(passiveMaster.inst.setCallback( DENALI_CDN_AXI_CB_EndedAddress));
-    //void'(passiveMaster.inst.setCallback( DENALI_CDN_AXI_CB_EndedResponse));
-    //void'(passiveMaster.inst.setCallback( DENALI_CDN_AXI_CB_EndedTransfer));
     
     // Active Slave
    void'(activeSlave1.inst.setCallback( DENALI_CDN_AXI_CB_Error));

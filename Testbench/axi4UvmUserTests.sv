@@ -161,12 +161,12 @@ class blockingNonBlockingTest extends axi4UvmUserTest;
 
 endclass : blockingNonBlockingTest
 
-class readAfterWriteTest extends axi4UvmUserTest;
+class read_after_write_test extends axi4UvmUserTest;
 	
-	`uvm_component_utils_begin(readAfterWriteTest)
+	`uvm_component_utils_begin(read_after_write_test)
 	`uvm_component_utils_end
 
-	function new(string name = "readAfterWriteTest",uvm_component parent);
+	function new(string name = "read_after_write_test",uvm_component parent);
 		super.new(name,parent); 
 	endfunction : new
 
@@ -174,11 +174,11 @@ class readAfterWriteTest extends axi4UvmUserTest;
 		super.build_phase(phase); 
 		
 		//set the starting sequence to system      
-		 uvm_config_db#(uvm_object_wrapper)::set(this, "axiSve0.vs.run_phase", "default_sequence",readAfterWriteSeq::type_id::get());
+		 uvm_config_db#(uvm_object_wrapper)::set(this, "axiSve0.vs.run_phase", "default_sequence",read_after_write_seq::type_id::get());
 		
 	endfunction : build_phase 
 
-endclass : readAfterWriteTest
+endclass : read_after_write_test
 
 class wrRespReorderTest extends axi4UvmUserTest;
 	
@@ -218,12 +218,12 @@ class exclusiveTest extends axi4UvmUserTest;
 
 endclass : exclusiveTest
 
-class ModifyTransactionTest extends axi4UvmUserTest;
+class modify_trans_test extends axi4UvmUserTest;
 	
-	`uvm_component_utils_begin(ModifyTransactionTest)
+	`uvm_component_utils_begin(modify_trans_test)
 	`uvm_component_utils_end
 
-	function new(string name = "ModifyTransactionTest",uvm_component parent);
+	function new(string name = "modify_trans_test",uvm_component parent);
 		super.new(name,parent); 
 	endfunction : new
 
@@ -235,7 +235,7 @@ class ModifyTransactionTest extends axi4UvmUserTest;
 		
 	endfunction : build_phase 
 
-endclass : ModifyTransactionTest
+endclass : modify_trans_test
 
 class UnalignedTransferTest extends axi4UvmUserTest;
 	
@@ -452,12 +452,12 @@ class allSequencesTest extends axi4UvmUserTest;
 
 endclass : allSequencesTest
 
-class WriteFromMaster0toSlave0Test extends axi4UvmUserTest;
+class write_from_mst0_to_slv0_test extends axi4UvmUserTest;
 	
-	`uvm_component_utils_begin(WriteFromMaster0toSlave0Test)
+	`uvm_component_utils_begin(write_from_mst0_to_slv0_test)
 	`uvm_component_utils_end
 
-	function new(string name = "WriteFromMaster0toSlave0Test",uvm_component parent);
+	function new(string name = "write_from_mst0_to_slv0_test",uvm_component parent);
 		super.new(name,parent); 
 	endfunction : new
 
@@ -465,18 +465,18 @@ class WriteFromMaster0toSlave0Test extends axi4UvmUserTest;
 		super.build_phase(phase); 
 		
 		//set the starting sequence to system      
-		 uvm_config_db#(uvm_object_wrapper)::set(this, "axiSve0.vs.run_phase", "default_sequence",writeFromMaster0toSlave0Seq::type_id::get());
+		 uvm_config_db#(uvm_object_wrapper)::set(this, "axiSve0.vs.run_phase", "default_sequence",write_from_mst0_to_slv0_seq::type_id::get());
 		
 	endfunction : build_phase 
 
-endclass : WriteFromMaster0toSlave0Test
+endclass : write_from_mst0_to_slv0_test
 
-class WriteFromMaster0ToSlave1Test extends axi4UvmUserTest;
+class write_from_mst0_to_slv1_test extends axi4UvmUserTest;
 	
-	`uvm_component_utils_begin(WriteFromMaster0ToSlave1Test)
+	`uvm_component_utils_begin(write_from_mst0_to_slv1_test)
 	`uvm_component_utils_end
 
-	function new(string name = "WriteFromMaster0ToSlave1Test",uvm_component parent);
+	function new(string name = "write_from_mst0_to_slv1_test",uvm_component parent);
 		super.new(name,parent); 
 	endfunction : new
 
@@ -484,18 +484,18 @@ class WriteFromMaster0ToSlave1Test extends axi4UvmUserTest;
 		super.build_phase(phase); 
 		
 		//set the starting sequence to system      
-		 uvm_config_db#(uvm_object_wrapper)::set(this, "axiSve0.vs.run_phase", "default_sequence",WriteFromMaster0ToSlave1Seq::type_id::get());
+		 uvm_config_db#(uvm_object_wrapper)::set(this, "axiSve0.vs.run_phase", "default_sequence",write_from_mst0_to_slv1_seq::type_id::get());
 		
 	endfunction : build_phase 
 
-endclass : WriteFromMaster0ToSlave1Test
+endclass : write_from_mst0_to_slv1_test
 
-class WriteFromMaster1ToSlave0Test extends axi4UvmUserTest;
+class write_from_mst1_to_slv0_test extends axi4UvmUserTest;
 	
-	`uvm_component_utils_begin(WriteFromMaster1ToSlave0Test)
+	`uvm_component_utils_begin(write_from_mst1_to_slv0_test)
 	`uvm_component_utils_end
 
-	function new(string name = "WriteFromMaster1ToSlave0Test",uvm_component parent);
+	function new(string name = "write_from_mst1_to_slv0_test",uvm_component parent);
 		super.new(name,parent); 
 	endfunction : new
 
@@ -503,18 +503,18 @@ class WriteFromMaster1ToSlave0Test extends axi4UvmUserTest;
 		super.build_phase(phase); 
 		
 		//set the starting sequence to system      
-		 uvm_config_db#(uvm_object_wrapper)::set(this, "axiSve0.vs.run_phase", "default_sequence",WriteFromMaster1ToSlave0Seq::type_id::get());
+		 uvm_config_db#(uvm_object_wrapper)::set(this, "axiSve0.vs.run_phase", "default_sequence",write_from_mst1_to_slv0_seq::type_id::get());
 		
 	endfunction : build_phase 
 
-endclass : WriteFromMaster1ToSlave0Test
+endclass : write_from_mst1_to_slv0_test
 
-class WriteFromMaster1ToSlave1Test extends axi4UvmUserTest;
+class write_from_mst1_to_slv1_test extends axi4UvmUserTest;
 	
-	`uvm_component_utils_begin(WriteFromMaster1ToSlave1Test)
+	`uvm_component_utils_begin(write_from_mst1_to_slv1_test)
 	`uvm_component_utils_end
 
-	function new(string name = "WriteFromMaster1ToSlave1Test",uvm_component parent);
+	function new(string name = "write_from_mst1_to_slv1_test",uvm_component parent);
 		super.new(name,parent); 
 	endfunction : new
 
@@ -522,18 +522,18 @@ class WriteFromMaster1ToSlave1Test extends axi4UvmUserTest;
 		super.build_phase(phase); 
 		
 		//set the starting sequence to system      
-		 uvm_config_db#(uvm_object_wrapper)::set(this, "axiSve0.vs.run_phase", "default_sequence",WriteFromMaster1ToSlave1Seq::type_id::get());
+		 uvm_config_db#(uvm_object_wrapper)::set(this, "axiSve0.vs.run_phase", "default_sequence",write_from_mst1_to_slv1_seq::type_id::get());
 		
 	endfunction : build_phase 
 
-endclass : WriteFromMaster1ToSlave1Test
+endclass : write_from_mst1_to_slv1_test
 
-class WriteFromMaster0toSlave0AndSlave1Test extends axi4UvmUserTest;
+class write_from_mst0_to_slv0_slv1_test extends axi4UvmUserTest;
 	
-	`uvm_component_utils_begin(WriteFromMaster0toSlave0AndSlave1Test)
+	`uvm_component_utils_begin(write_from_mst0_to_slv0_slv1_test)
 	`uvm_component_utils_end
 
-	function new(string name = "WriteFromMaster0toSlave0AndSlave1Test",uvm_component parent);
+	function new(string name = "write_from_mst0_to_slv0_slv1_test",uvm_component parent);
 		super.new(name,parent); 
 	endfunction : new
 
@@ -541,18 +541,18 @@ class WriteFromMaster0toSlave0AndSlave1Test extends axi4UvmUserTest;
 		super.build_phase(phase); 
 		
 		//set the starting sequence to system      
-		 uvm_config_db#(uvm_object_wrapper)::set(this, "axiSve0.vs.run_phase", "default_sequence",writeFromMaster0toSlave0AndSlave1Seq::type_id::get());
+		 uvm_config_db#(uvm_object_wrapper)::set(this, "axiSve0.vs.run_phase", "default_sequence",write_from_mst0_to_slv0_slv1_seq::type_id::get());
 		
 	endfunction : build_phase 
 
-endclass : WriteFromMaster0toSlave0AndSlave1Test
+endclass : write_from_mst0_to_slv0_slv1_test
 
-class WriteUsingSameIdTagTest extends axi4UvmUserTest;
+class write_from_mst1_to_slv0_slv1_test extends axi4UvmUserTest;
 	
-	`uvm_component_utils_begin(WriteUsingSameIdTagTest)
+	`uvm_component_utils_begin(write_from_mst1_to_slv0_slv1_test)
 	`uvm_component_utils_end
 
-	function new(string name = "WriteUsingSameIdTagTest",uvm_component parent);
+	function new(string name = "write_from_mst1_to_slv0_slv1_test",uvm_component parent);
 		super.new(name,parent); 
 	endfunction : new
 
@@ -560,19 +560,18 @@ class WriteUsingSameIdTagTest extends axi4UvmUserTest;
 		super.build_phase(phase); 
 		
 		//set the starting sequence to system      
-		 uvm_config_db#(uvm_object_wrapper)::set(this, "axiSve0.vs.run_phase", "default_sequence",WriteTransactionWithSameIdTagSeq::type_id::get());
+		 uvm_config_db#(uvm_object_wrapper)::set(this, "axiSve0.vs.run_phase", "default_sequence",write_from_mst1_to_slv0_slv1_seq::type_id::get());
 		
 	endfunction : build_phase 
 
-endclass : WriteUsingSameIdTagTest
+endclass : write_from_mst1_to_slv0_slv1_test
 
-
-class ReadAxiTest extends axi4UvmUserTest;
+class decode_error_test extends axi4UvmUserTest;
 	
-	`uvm_component_utils_begin(ReadAxiTest)
+	`uvm_component_utils_begin(decode_error_test)
 	`uvm_component_utils_end
 
-	function new(string name = "ReadAxiTest",uvm_component parent);
+	function new(string name = "decode_error_test",uvm_component parent);
 		super.new(name,parent); 
 	endfunction : new
 
@@ -580,19 +579,18 @@ class ReadAxiTest extends axi4UvmUserTest;
 		super.build_phase(phase); 
 		
 		//set the starting sequence to system      
-		 uvm_config_db#(uvm_object_wrapper)::set(this, "axiSve0.vs.run_phase", "default_sequence",ReadAxiSeq::type_id::get());
+		 uvm_config_db#(uvm_object_wrapper)::set(this, "axiSve0.vs.run_phase", "default_sequence",decode_error::type_id::get());
 		
 	endfunction : build_phase 
 
-endclass : ReadAxiTest
+endclass : decode_error_test
 
-
-class WriteBurstTest extends axi4UvmUserTest;
+class write_from_mst1_to_slv0_and_from_mst0_to_slv1_test extends axi4UvmUserTest;
 	
-	`uvm_component_utils_begin(WriteBurstTest)
+	`uvm_component_utils_begin(write_from_mst1_to_slv0_and_from_mst0_to_slv1_test)
 	`uvm_component_utils_end
 
-	function new(string name = "WriteBurstTest",uvm_component parent);
+	function new(string name = "write_from_mst1_to_slv0_and_from_mst0_to_slv1_test",uvm_component parent);
 		super.new(name,parent); 
 	endfunction : new
 
@@ -600,11 +598,71 @@ class WriteBurstTest extends axi4UvmUserTest;
 		super.build_phase(phase); 
 		
 		//set the starting sequence to system      
-		 uvm_config_db#(uvm_object_wrapper)::set(this, "axiSve0.vs.run_phase", "default_sequence",WriteBurstSeq::type_id::get());
+		 uvm_config_db#(uvm_object_wrapper)::set(this, "axiSve0.vs.run_phase", "default_sequence",write_from_mst1_to_slv0_and_from_mst0_to_slv1_seq::type_id::get());
 		
 	endfunction : build_phase 
 
-endclass : WriteBurstTest
+endclass : write_from_mst1_to_slv0_and_from_mst0_to_slv1_test
+
+
+class write_using_sameID_tag_test extends axi4UvmUserTest;
+	
+	`uvm_component_utils_begin(write_using_sameID_tag_test)
+	`uvm_component_utils_end
+
+	function new(string name = "write_using_sameID_tag_test",uvm_component parent);
+		super.new(name,parent); 
+	endfunction : new
+
+	virtual function void build_phase(uvm_phase phase);
+		super.build_phase(phase); 
+		
+		//set the starting sequence to system      
+		 uvm_config_db#(uvm_object_wrapper)::set(this, "axiSve0.vs.run_phase", "default_sequence",write_using_sameID_tag_seq::type_id::get());
+		
+	endfunction : build_phase 
+
+endclass : write_using_sameID_tag_test
+
+
+class read_axi_test extends axi4UvmUserTest;
+	
+	`uvm_component_utils_begin(read_axi_test)
+	`uvm_component_utils_end
+
+	function new(string name = "read_axi_test",uvm_component parent);
+		super.new(name,parent); 
+	endfunction : new
+
+	virtual function void build_phase(uvm_phase phase);
+		super.build_phase(phase); 
+		
+		//set the starting sequence to system      
+		 uvm_config_db#(uvm_object_wrapper)::set(this, "axiSve0.vs.run_phase", "default_sequence",read_axi_seq::type_id::get());
+		
+	endfunction : build_phase 
+
+endclass : read_axi_test
+
+
+class wrap_burst_test extends axi4UvmUserTest;
+	
+	`uvm_component_utils_begin(wrap_burst_test)
+	`uvm_component_utils_end
+
+	function new(string name = "wrap_burst_test",uvm_component parent);
+		super.new(name,parent); 
+	endfunction : new
+
+	virtual function void build_phase(uvm_phase phase);
+		super.build_phase(phase); 
+		
+		//set the starting sequence to system      
+		 uvm_config_db#(uvm_object_wrapper)::set(this, "axiSve0.vs.run_phase", "default_sequence",wrap_burst_seq::type_id::get());
+		
+	endfunction : build_phase 
+
+endclass : wrap_burst_test
 
 
 `endif // _USER_CDN_AXI_SVE_TEST

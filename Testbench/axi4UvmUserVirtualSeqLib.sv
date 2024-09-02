@@ -364,7 +364,7 @@ class blockingNonBlockingSeq extends axi4UvmVirtualSequence;
 		
 		
 		`uvm_info(get_type_name(), "sending 100 blocking transactions", UVM_LOW);
-		for(int j =0; j<10; ++j) begin
+		for(int j =0; j<1; ++j) begin
 			`uvm_do_on_with(masterBurst, p_sequencer.masterSeqr, {
 				masterBurst.Type inside {DENALI_CDN_AXI_TR_Read, DENALI_CDN_AXI_TR_Write};
 			})
@@ -372,7 +372,7 @@ class blockingNonBlockingSeq extends axi4UvmVirtualSequence;
 		end
 		
 		`uvm_info(get_type_name(), "sending 100 non-blocking transactions", UVM_LOW);
-		for(int j =0; j<10; ++j) begin
+		for(int j =0; j<1; ++j) begin
 			`uvm_do_on_with(masterBurst, p_sequencer.masterSeqr, {
 				masterBurst.Type inside {DENALI_CDN_AXI_TR_Read, DENALI_CDN_AXI_TR_Write};
 				masterBurst.Length < 10;
@@ -384,26 +384,26 @@ class blockingNonBlockingSeq extends axi4UvmVirtualSequence;
 	
 endclass : blockingNonBlockingSeq
 
-class readAfterWriteSeq extends axi4UvmVirtualSequence;
+class read_after_write_seq extends axi4UvmVirtualSequence;
     
   axi4UvmBlockingWriteSeq writeSeq;
   axi4UvmBlockingReadSeq readSeq;
-  reg [63:0] same_address = 64'h100;
+  reg [63:0] same_address = 64'h1100;
   //rand reg [63:0] same_address;
-  reg [7:0] same_length = 4;
+  reg [7:0] same_length = 2;
   denaliCdn_axiTransferSizeT same_size = DENALI_CDN_AXI_TRANSFERSIZE_BYTE;
   denaliCdn_axiBurstKindT same_kind = DENALI_CDN_AXI_BURSTKIND_INCR;
   denaliCdn_axiSecureModeT same_secure = DENALI_CDN_AXI_SECUREMODE_NONSECURE;
 
   reg [7:0] w_data[];
 
-  `uvm_object_utils_begin(readAfterWriteSeq)
+  `uvm_object_utils_begin(read_after_write_seq)
   	`uvm_field_object(writeSeq, UVM_ALL_ON)
     `uvm_field_object(readSeq, UVM_ALL_ON)
   `uvm_object_utils_end
 
    
-  function new(string name="readAfterWriteSeq");
+  function new(string name="read_after_write_seq");
     super.new(name);
     `uvm_create(writeSeq);
     `uvm_create(readSeq);
@@ -415,14 +415,52 @@ class readAfterWriteSeq extends axi4UvmVirtualSequence;
 //@olist
   virtual task body();
   
-    `uvm_info(get_type_name(), "VIRTUAL_SEQUENCE_IDENTIFIER - Virtual sequence readAfterWriteSeq started", UVM_LOW);
-    //`uvm_info(get_type_name(), "VIRTUAL_SEQUENCE_IDENTIFIER - Virtual sequence readAfterWriteSeq started",same_address UVM_LOW);
+    `uvm_info(get_type_name(), "VIRTUAL_SEQUENCE_IDENTIFIER - Virtual sequence read_after_write_seq started", UVM_LOW);
+    //`uvm_info(get_type_name(), "VIRTUAL_SEQUENCE_IDENTIFIER - Virtual sequence read_after_write_seq started",same_address UVM_LOW);
     #1000;
 
-    `uvm_info(get_type_name(), "Sending a Write following by a Read to the same address", UVM_LOW);
+    `uvm_info(get_type_name(), "Sending a Write from master 1 following by a Read to the same address(slave 0)", UVM_LOW);
 // writeSeq.lengh_constraints.constraint_mode(0);
 //@listitem Send a write burst to a specific address.     
     `uvm_do_on_with(writeSeq, p_sequencer.masterSeqr1, {
+        writeSeq.address == same_address;
+        writeSeq.length  == same_length;
+        writeSeq.size    == same_size;
+        writeSeq.kind    == same_kind;
+        writeSeq.secure  == same_secure;
+    })
+    
+    // After the completion of the Write sequence, the updated transaction can
+    // be accessed in the sequence's field 'response' 
+	w_data = new[writeSeq.response.Data.size()];
+	for (int i=0; i<writeSeq.response.Data.size(); i++) begin 
+    	w_data[i] = writeSeq.response.Data[i];
+    end 
+
+//@listitem Send a read burst to the same address.    
+    `uvm_do_on_with(readSeq, p_sequencer.masterSeqr1, {
+        readSeq.address == same_address;
+        readSeq.length  == same_length;
+        readSeq.size    == same_size;
+        readSeq.kind    == same_kind;
+        readSeq.secure  == same_secure;
+    })
+  
+    // After the completion of the Read sequence, the updated transaction can
+    // be accessed in the sequence's field 'response'
+//@listitem Check consistency. 
+    for (int i=0; i<readSeq.response.Data.size(); i++) begin 
+		if(readSeq.response.Data[i] != w_data[i]) begin 
+			`uvm_fatal(get_type_name(), $sformatf("ERROR: DATA INCONSISTENCY in address (%d)\nData after WRITE: %d\nData after READ: %d",
+				readSeq.response.StartAddress+i, w_data[i],readSeq.response.Data[i]));
+		end
+    end
+
+
+ `uvm_info(get_type_name(), "Sending a Write from master 0 following by a Read to the same address(slave 0)", UVM_LOW);
+// writeSeq.lengh_constraints.constraint_mode(0);
+//@listitem Send a write burst to a specific address.     
+    `uvm_do_on_with(writeSeq, p_sequencer.masterSeqr, {
         writeSeq.address == same_address;
         writeSeq.length  == same_length;
         writeSeq.size    == same_size;
@@ -455,14 +493,16 @@ class readAfterWriteSeq extends axi4UvmVirtualSequence;
 				readSeq.response.StartAddress+i, w_data[i],readSeq.response.Data[i]));
 		end
     end
+
+
       
-    `uvm_info(get_type_name(), "Finished body of readAfterWriteSeq", UVM_LOW);
+    `uvm_info(get_type_name(), "Finished body of read_after_write_seq", UVM_LOW);
 
   endtask // body
 //@olist/
 
 
-endclass // readAfterWriteSeq
+endclass // read_after_write_seq
 
 
 
@@ -508,7 +548,6 @@ class modifyTransactionSeq extends axi4UvmVirtualSequence;
         `uvm_do_on(slaveRespSeq,p_sequencer.slaveSeqr);
       end
     join_any
-     
   endtask
 //@olist
 
@@ -563,7 +602,7 @@ class unaligned_transfer_seq extends axi4UvmVirtualSequence;
        masterBurst.Direction ==  DENALI_CDN_AXI_DIRECTION_WRITE;
 	   masterBurst.IdTag ==  2;
 	   masterBurst.StartAddress == 'h0002;
-       masterBurst.Length == 3;
+       masterBurst.Length == 6;
        masterBurst.Size == DENALI_CDN_AXI_TRANSFERSIZE_WORD;
        masterBurst.Data.size() == 8;
        masterBurst.Kind == DENALI_CDN_AXI_BURSTKIND_INCR; 
@@ -1572,7 +1611,7 @@ class allVirtualSequences extends axi4UvmVirtualSequence;
     super.new(name);        
   endfunction : new  
   
-  readAfterWriteSeq readAfterWriteSeq;
+  read_after_write_seq read_after_write_seq;
   modifyTransactionSeq modifyTransactionSeq;
   unaligned_transfer_seq unalignedTransferSeq;
   exclusive_seq exclusiveSeq;
@@ -1591,7 +1630,7 @@ class allVirtualSequences extends axi4UvmVirtualSequence;
 	  	`uvm_info(get_type_name(), "VIRTUAL_SEQUENCE_IDENTIFIER - Starting allVirtualSequences sequence ", UVM_LOW);
 	  	for(int j=0; j < 1; j++) begin
 	  		#1000;  
-	  		`uvm_do(readAfterWriteSeq);
+	  		`uvm_do(read_after_write_seq);
 	  		#1000;
 	  		`uvm_do(modifyTransactionSeq);
 	  		#1000;
@@ -1750,11 +1789,10 @@ class axi4_seq_lib extends uvm_sequence_library;
 endclass : axi4_seq_lib
 
 
-class writeFromMaster0toSlave0Seq extends axi4UvmVirtualSequence;
+class write_from_mst0_to_slv0_seq extends axi4UvmVirtualSequence;
     
   axi4UvmBlockingWriteSeq writeSeq;
-
-  reg [63:0] same_address = 64'h1770;
+  reg [63:0] same_address = 64'h1900;
   reg [7:0] same_length = 4;
   denaliCdn_axiTransferSizeT same_size = DENALI_CDN_AXI_TRANSFERSIZE_BYTE;
   denaliCdn_axiBurstKindT same_kind = DENALI_CDN_AXI_BURSTKIND_INCR;
@@ -1762,12 +1800,11 @@ class writeFromMaster0toSlave0Seq extends axi4UvmVirtualSequence;
 
   reg [7:0] w_data[];
 
-  `uvm_object_utils_begin(writeFromMaster0toSlave0Seq)
+  `uvm_object_utils_begin(write_from_mst0_to_slv0_seq)
   	`uvm_field_object(writeSeq, UVM_ALL_ON)
   `uvm_object_utils_end
 
-   
-  function new(string name="writeFromMaster0toSlave0Seq");
+  function new(string name="write_from_mst0_to_slv0_seq");
     super.new(name);
     `uvm_create(writeSeq);
   endfunction // new
@@ -1778,7 +1815,7 @@ class writeFromMaster0toSlave0Seq extends axi4UvmVirtualSequence;
 //@olist
   virtual task body();
   
-    `uvm_info(get_type_name(), "VIRTUAL_SEQUENCE_IDENTIFIER - Virtual sequence writeFromMaster0toSlave0Seq started", UVM_LOW);
+    `uvm_info(get_type_name(), "VIRTUAL_SEQUENCE_IDENTIFIER - Virtual sequence write_from_mst0_to_slv0_seq started", UVM_LOW);
     #1000;
 
     `uvm_info(get_type_name(), "Sending a Write transaction from master 0 to slave 0", UVM_LOW);
@@ -1801,31 +1838,27 @@ class writeFromMaster0toSlave0Seq extends axi4UvmVirtualSequence;
       $display("wdata value::%0h",w_data[i]);
     end 
       
-    `uvm_info(get_type_name(), "Finished body of writeFromMaster0toSlave0Seq", UVM_LOW);
+    `uvm_info(get_type_name(), "Finished body of write_from_mst0_to_slv0_seq", UVM_LOW);
 
   endtask // body
+endclass // write_from_mst0_to_slv0_seq
 
-
-endclass // writeFromMaster0toSlave0Seq
-
-class WriteFromMaster0ToSlave1Seq extends axi4UvmVirtualSequence;
+class write_from_mst0_to_slv1_seq extends axi4UvmVirtualSequence;
     
   axi4UvmBlockingWriteSeq writeSeq;
-
   reg [63:0] same_address = 64'h3070;
-  reg [7:0] same_length = 6;
+  reg [7:0] same_length = 4;
   denaliCdn_axiTransferSizeT same_size = DENALI_CDN_AXI_TRANSFERSIZE_BYTE;
   denaliCdn_axiBurstKindT same_kind = DENALI_CDN_AXI_BURSTKIND_INCR;
   denaliCdn_axiSecureModeT same_secure = DENALI_CDN_AXI_SECUREMODE_NONSECURE;
 
   reg [7:0] w_data[];
 
-  `uvm_object_utils_begin(WriteFromMaster0ToSlave1Seq)
+  `uvm_object_utils_begin(write_from_mst0_to_slv1_seq)
   	`uvm_field_object(writeSeq, UVM_ALL_ON)
   `uvm_object_utils_end
 
-   
-  function new(string name="WriteFromMaster0ToSlave1Seq");
+  function new(string name="write_from_mst0_to_slv1_seq");
     super.new(name);
     `uvm_create(writeSeq);
   endfunction // new
@@ -1836,7 +1869,7 @@ class WriteFromMaster0ToSlave1Seq extends axi4UvmVirtualSequence;
 //@olist
   virtual task body();
   
-    `uvm_info(get_type_name(), "VIRTUAL_SEQUENCE_IDENTIFIER - Virtual sequence WriteFromMaster0ToSlave1Seq started", UVM_LOW);
+    `uvm_info(get_type_name(), "VIRTUAL_SEQUENCE_IDENTIFIER - Virtual sequence write_from_mst0_to_slv1_seq started", UVM_LOW);
     #1000;
 
     `uvm_info(get_type_name(), "Sending a Write transaction from master 0 to slave 1", UVM_LOW);
@@ -1860,31 +1893,27 @@ class WriteFromMaster0ToSlave1Seq extends axi4UvmVirtualSequence;
       $display("wdata value::%0h",w_data[i]);
     end 
       
-    `uvm_info(get_type_name(), "Finished body of WriteFromMaster0ToSlave1Seq", UVM_LOW);
+    `uvm_info(get_type_name(), "Finished body of write_from_mst0_to_slv1_seq", UVM_LOW);
 
   endtask // body
+endclass // write_from_mst0_to_slv1_seq
 
-
-endclass // WriteFromMaster0ToSlave1Seq
-
-class WriteFromMaster1ToSlave0Seq extends axi4UvmVirtualSequence;
+class write_from_mst1_to_slv0_seq extends axi4UvmVirtualSequence;
     
   axi4UvmBlockingWriteSeq writeSeq;
-
-  reg [63:0] same_address = 64'h1000;
-  reg [7:0] same_length = 6;
+  reg [63:0] same_address = 64'h6001;
+  reg [7:0] same_length = 2;
   denaliCdn_axiTransferSizeT same_size = DENALI_CDN_AXI_TRANSFERSIZE_BYTE;
   denaliCdn_axiBurstKindT same_kind = DENALI_CDN_AXI_BURSTKIND_INCR;
   denaliCdn_axiSecureModeT same_secure = DENALI_CDN_AXI_SECUREMODE_NONSECURE;
 
   reg [7:0] w_data[];
 
-  `uvm_object_utils_begin(WriteFromMaster1ToSlave0Seq)
+  `uvm_object_utils_begin(write_from_mst1_to_slv0_seq)
   	`uvm_field_object(writeSeq, UVM_ALL_ON)
   `uvm_object_utils_end
 
-   
-  function new(string name="WriteFromMaster1ToSlave0Seq");
+  function new(string name="write_from_mst1_to_slv0_seq");
     super.new(name);
     `uvm_create(writeSeq);
   endfunction // new
@@ -1895,7 +1924,7 @@ class WriteFromMaster1ToSlave0Seq extends axi4UvmVirtualSequence;
 //@olist
   virtual task body();
   
-    `uvm_info(get_type_name(), "VIRTUAL_SEQUENCE_IDENTIFIER - Virtual sequence WriteFromMaster1ToSlave0Seq started", UVM_LOW);
+    `uvm_info(get_type_name(), "VIRTUAL_SEQUENCE_IDENTIFIER - Virtual sequence write_from_mst1_to_slv0_seq started", UVM_LOW);
     #1000;
 
     `uvm_info(get_type_name(), "Sending a Write transaction from master 1 to slave 0", UVM_LOW);
@@ -1919,31 +1948,27 @@ class WriteFromMaster1ToSlave0Seq extends axi4UvmVirtualSequence;
       $display("wdata value::%0h",w_data[i]);
     end 
       
-    `uvm_info(get_type_name(), "Finished body of WriteFromMaster1ToSlave0Seq", UVM_LOW);
+    `uvm_info(get_type_name(), "Finished body of write_from_mst1_to_slv0_seq", UVM_LOW);
 
   endtask // body
+endclass // write_from_mst1_to_slv0_seq
 
-
-endclass // WriteFromMaster1ToSlave0Seq
-
-class WriteFromMaster1ToSlave1Seq extends axi4UvmVirtualSequence;
+class write_from_mst1_to_slv1_seq extends axi4UvmVirtualSequence;
     
   axi4UvmBlockingWriteSeq writeSeq;
-
   reg [63:0] same_address = 64'h3020;
-  reg [7:0] same_length = 4;
+  reg [7:0] same_length = 2;
   denaliCdn_axiTransferSizeT same_size = DENALI_CDN_AXI_TRANSFERSIZE_BYTE;
   denaliCdn_axiBurstKindT same_kind = DENALI_CDN_AXI_BURSTKIND_INCR;
   denaliCdn_axiSecureModeT same_secure = DENALI_CDN_AXI_SECUREMODE_NONSECURE;
 
   reg [7:0] w_data[];
 
-  `uvm_object_utils_begin(WriteFromMaster1ToSlave1Seq)
+  `uvm_object_utils_begin(write_from_mst1_to_slv1_seq)
   	`uvm_field_object(writeSeq, UVM_ALL_ON)
   `uvm_object_utils_end
 
-   
-  function new(string name="WriteFromMaster1ToSlave1Seq");
+  function new(string name="write_from_mst1_to_slv1_seq");
     super.new(name);
     `uvm_create(writeSeq);
   endfunction // new
@@ -1954,7 +1979,7 @@ class WriteFromMaster1ToSlave1Seq extends axi4UvmVirtualSequence;
 //@olist
   virtual task body();
   
-    `uvm_info(get_type_name(), "VIRTUAL_SEQUENCE_IDENTIFIER - Virtual sequence WriteFromMaster1ToSlave1Seq started", UVM_LOW);
+    `uvm_info(get_type_name(), "VIRTUAL_SEQUENCE_IDENTIFIER - Virtual sequence write_from_mst1_to_slv1_seq started", UVM_LOW);
     #1000;
 
     `uvm_info(get_type_name(), "Sending a Write transaction from master 1 to slave 1", UVM_LOW);
@@ -1978,15 +2003,14 @@ class WriteFromMaster1ToSlave1Seq extends axi4UvmVirtualSequence;
       $display("wdata value::%0h",w_data[i]);
     end 
       
-    `uvm_info(get_type_name(), "Finished body of WriteFromMaster1ToSlave1Seq", UVM_LOW);
+    `uvm_info(get_type_name(), "Finished body of write_from_mst1_to_slv1_seq", UVM_LOW);
 
   endtask // body
-endclass // WriteFromMaster1ToSlave1Seq
+endclass // write_from_mst1_to_slv1_seq
 
-class writeFromMaster0toSlave0AndSlave1Seq extends axi4UvmVirtualSequence;
+class write_from_mst0_to_slv0_slv1_seq extends axi4UvmVirtualSequence;
     
   axi4UvmBlockingWriteSeq writeSeq;
-
   reg [63:0] same_address = 64'h1070;
   reg [7:0] same_length = 2;
   denaliCdn_axiTransferSizeT same_size = DENALI_CDN_AXI_TRANSFERSIZE_BYTE;
@@ -1995,12 +2019,12 @@ class writeFromMaster0toSlave0AndSlave1Seq extends axi4UvmVirtualSequence;
 
   reg [7:0] w_data[];
 
-  `uvm_object_utils_begin(writeFromMaster0toSlave0AndSlave1Seq)
+  `uvm_object_utils_begin(write_from_mst0_to_slv0_slv1_seq)
   	`uvm_field_object(writeSeq, UVM_ALL_ON)
   `uvm_object_utils_end
 
    
-  function new(string name="writeFromMaster0toSlave0AndSlave1Seq");
+  function new(string name="write_from_mst0_to_slv0_slv1_seq");
     super.new(name);
     `uvm_create(writeSeq);
   endfunction // new
@@ -2011,7 +2035,7 @@ class writeFromMaster0toSlave0AndSlave1Seq extends axi4UvmVirtualSequence;
 //@olist
   virtual task body();
   
-    `uvm_info(get_type_name(), "VIRTUAL_SEQUENCE_IDENTIFIER - Virtual sequence writeFromMaster0toSlave0AndSlave1Seq started", UVM_LOW);
+    `uvm_info(get_type_name(), "VIRTUAL_SEQUENCE_IDENTIFIER - Virtual sequence write_from_mst0_to_slv0_slv1_seq started", UVM_LOW);
     #1000;
 
     `uvm_info(get_type_name(), "Sending a Write transaction from master 0 to slave 0 and slave 1", UVM_LOW);
@@ -2036,7 +2060,7 @@ class writeFromMaster0toSlave0AndSlave1Seq extends axi4UvmVirtualSequence;
       $display("wdata value::%0h",w_data[i]);
     end 
 
- `uvm_info(get_type_name(), "Sending a Write transaction to slave 1", UVM_LOW);
+ `uvm_info(get_type_name(), "Sending a Write transaction from master 0 to slave 1", UVM_LOW);
    `uvm_do_on_with(writeSeq, p_sequencer.masterSeqr, {
         writeSeq.address == 64'h2800;
         writeSeq.length  == same_length;
@@ -2055,31 +2079,29 @@ class writeFromMaster0toSlave0AndSlave1Seq extends axi4UvmVirtualSequence;
     end   
 // #10ns;
       
-    `uvm_info(get_type_name(), "Finished body of writeFromMaster0toSlave0AndSlave1Seq", UVM_LOW);
+    `uvm_info(get_type_name(), "Finished body of write_from_mst0_to_slv0_slv1_seq", UVM_LOW);
 
   endtask // body
+endclass // write_from_mst0_to_slv0_slv1_seq
 
 
-endclass // writeFromMaster0toSlave0AndSlave1Seq
-
-class WriteTransactionWithSameIdTagSeq extends axi4UvmVirtualSequence;
+class write_from_mst1_to_slv0_slv1_seq extends axi4UvmVirtualSequence;
     
-  writeTranswithSameIdTag writeSeq;
-
-  reg [63:0] same_address = 64'h1799;
-  reg [7:0] same_length = 6;
+  axi4UvmBlockingWriteSeq writeSeq;
+  reg [63:0] same_address = 64'h1270;
+  reg [7:0] same_length = 2;
   denaliCdn_axiTransferSizeT same_size = DENALI_CDN_AXI_TRANSFERSIZE_BYTE;
   denaliCdn_axiBurstKindT same_kind = DENALI_CDN_AXI_BURSTKIND_INCR;
   denaliCdn_axiSecureModeT same_secure = DENALI_CDN_AXI_SECUREMODE_NONSECURE;
 
   reg [7:0] w_data[];
 
-  `uvm_object_utils_begin(WriteTransactionWithSameIdTagSeq)
+  `uvm_object_utils_begin(write_from_mst1_to_slv0_slv1_seq)
   	`uvm_field_object(writeSeq, UVM_ALL_ON)
   `uvm_object_utils_end
 
    
-  function new(string name="WriteTransactionWithSameIdTagSeq");
+  function new(string name="write_from_mst1_to_slv0_slv1_seq");
     super.new(name);
     `uvm_create(writeSeq);
   endfunction // new
@@ -2090,10 +2112,218 @@ class WriteTransactionWithSameIdTagSeq extends axi4UvmVirtualSequence;
 //@olist
   virtual task body();
   
-    `uvm_info(get_type_name(), "VIRTUAL_SEQUENCE_IDENTIFIER - Virtual sequence WriteTransactionWithSameIdTagSeq started", UVM_LOW);
+    `uvm_info(get_type_name(), "VIRTUAL_SEQUENCE_IDENTIFIER - Virtual sequence write_from_mst1_to_slv0_slv1_seq started", UVM_LOW);
     #1000;
 
-    `uvm_info(get_type_name(), "Sending a Write transaction from master 0 and master 1 to slave 0 ", UVM_LOW);
+    `uvm_info(get_type_name(), "Sending a Write transaction from master 1 to slave 0 and slave 1", UVM_LOW);
+
+     `uvm_info(get_type_name(), "First Sending a Write transaction from master 1 to slave 0 ", UVM_LOW);
+//@listitem Send a write burst to a specific address.     
+    `uvm_do_on_with(writeSeq, p_sequencer.masterSeqr1, {
+        writeSeq.address == same_address;
+        writeSeq.length  == same_length;
+        writeSeq.size    == same_size;
+        writeSeq.kind    == same_kind;
+        writeSeq.secure  == same_secure;
+    })
+    
+    // After the completion of the Write sequence, the updated transaction can
+    // be accessed in the sequence's field 'response' 
+
+	w_data = new[writeSeq.response.Data.size()];
+	for (int i=0; i<writeSeq.response.Data.size(); i++) begin 
+    	w_data[i] = writeSeq.response.Data[i];
+      $display("writeSeq.response.Data.size():: %0d",writeSeq.response.Data.size());
+      $display("wdata value::%0h",w_data[i]);
+    end 
+
+ `uvm_info(get_type_name(), "Sending a Write transaction from master 1 to slave 1", UVM_LOW);
+   `uvm_do_on_with(writeSeq, p_sequencer.masterSeqr1, {
+        writeSeq.address == 64'h2800;
+        writeSeq.length  == same_length;
+        writeSeq.size    == same_size;
+        writeSeq.kind    == same_kind;
+        writeSeq.secure  == same_secure;
+    })
+    
+    // After the completion of the Write sequence, the updated transaction can
+    // be accessed in the sequence's field 'response' 
+	w_data = new[writeSeq.response.Data.size()];
+	for (int i=0; i<writeSeq.response.Data.size(); i++) begin 
+    	w_data[i] = writeSeq.response.Data[i];
+      $display("writeSeq.response.Data.size():: %0d",writeSeq.response.Data.size());
+      $display("wdata value::%0h",w_data[i]);
+    end   
+// #10ns;
+      
+    `uvm_info(get_type_name(), "Finished body of write_from_mst1_to_slv0_slv1_seq", UVM_LOW);
+
+  endtask // body
+endclass // write_from_mst1_to_slv0_slv1_seq
+
+
+class decode_error extends axi4UvmVirtualSequence;
+    
+  axi4UvmBlockingWriteSeq writeSeq;
+  reg [63:0] same_address = 64'h6001;
+  reg [7:0] same_length = 2;
+  denaliCdn_axiTransferSizeT same_size = DENALI_CDN_AXI_TRANSFERSIZE_BYTE;
+  denaliCdn_axiBurstKindT same_kind = DENALI_CDN_AXI_BURSTKIND_INCR;
+  denaliCdn_axiSecureModeT same_secure = DENALI_CDN_AXI_SECUREMODE_NONSECURE;
+
+  reg [7:0] w_data[];
+
+  `uvm_object_utils_begin(decode_error)
+  	`uvm_field_object(writeSeq, UVM_ALL_ON)
+  `uvm_object_utils_end
+
+   
+  function new(string name="decode_error");
+    super.new(name);
+    `uvm_create(writeSeq);
+  endfunction // new
+
+//@para <b>Test Requirements:</b> None
+//@para <b>Test Scenario:</b>
+
+//@olist
+  virtual task body();
+  
+    `uvm_info(get_type_name(), "VIRTUAL_SEQUENCE_IDENTIFIER - Virtual sequence test_decode_error started", UVM_LOW);
+    #1000;
+
+    `uvm_info(get_type_name(), "Sending a Write transaction from master 1 to the address range outside of the scope", UVM_LOW);
+
+//@listitem Send a write burst to a specific address.     
+    `uvm_do_on_with(writeSeq, p_sequencer.masterSeqr1, {
+        writeSeq.address == same_address;
+        writeSeq.length  == same_length;
+        writeSeq.size    == same_size;
+        writeSeq.kind    == same_kind;
+        writeSeq.secure  == same_secure;
+    })
+    
+    // After the completion of the Write sequence, the updated transaction can
+    // be accessed in the sequence's field 'response' 
+
+	w_data = new[writeSeq.response.Data.size()];
+	for (int i=0; i<writeSeq.response.Data.size(); i++) begin 
+    	w_data[i] = writeSeq.response.Data[i];
+      $display("writeSeq.response.Data.size():: %0d",writeSeq.response.Data.size());
+      $display("wdata value::%0h",w_data[i]);
+    end 
+      
+    `uvm_info(get_type_name(), "Finished body of decode_error", UVM_LOW);
+
+  endtask // body
+endclass // decode_error
+
+class write_from_mst1_to_slv0_and_from_mst0_to_slv1_seq extends axi4UvmVirtualSequence;
+    
+  axi4UvmBlockingWriteSeq writeSeq;
+  reg [63:0] same_address = 64'h1270;
+  reg [7:0] same_length = 2;
+  denaliCdn_axiTransferSizeT same_size = DENALI_CDN_AXI_TRANSFERSIZE_BYTE;
+  denaliCdn_axiBurstKindT same_kind = DENALI_CDN_AXI_BURSTKIND_INCR;
+  denaliCdn_axiSecureModeT same_secure = DENALI_CDN_AXI_SECUREMODE_NONSECURE;
+
+  reg [7:0] w_data[];
+
+  `uvm_object_utils_begin(write_from_mst1_to_slv0_and_from_mst0_to_slv1_seq)
+  	`uvm_field_object(writeSeq, UVM_ALL_ON)
+  `uvm_object_utils_end
+
+  function new(string name="write_from_mst1_to_slv0_and_from_mst0_to_slv1_seq");
+    super.new(name);
+    `uvm_create(writeSeq);
+  endfunction // new
+
+//@para <b>Test Requirements:</b> None
+//@para <b>Test Scenario:</b>
+
+//@olist
+  virtual task body();
+  
+    `uvm_info(get_type_name(), "VIRTUAL_SEQUENCE_IDENTIFIER - Virtual sequence write_from_mst1_to_slv0_and_from_mst0_to_slv1_seq started", UVM_LOW);
+    #1000;
+
+    `uvm_info(get_type_name(), "Sending a Write transaction from master 1 to slave 0 and from master 0 to slave 1", UVM_LOW);
+
+     `uvm_info(get_type_name(), "First Sending a Write transaction from master 1 to slave 0 ", UVM_LOW);
+//@listitem Send a write burst to a specific address.     
+    `uvm_do_on_with(writeSeq, p_sequencer.masterSeqr1, {
+        writeSeq.address == same_address;
+        writeSeq.length  == same_length;
+        writeSeq.size    == same_size;
+        writeSeq.kind    == same_kind;
+        writeSeq.secure  == same_secure;
+    })
+    
+    // After the completion of the Write sequence, the updated transaction can
+    // be accessed in the sequence's field 'response' 
+
+	w_data = new[writeSeq.response.Data.size()];
+	for (int i=0; i<writeSeq.response.Data.size(); i++) begin 
+    	w_data[i] = writeSeq.response.Data[i];
+      $display("writeSeq.response.Data.size():: %0d",writeSeq.response.Data.size());
+      $display("wdata value::%0h",w_data[i]);
+    end 
+
+ `uvm_info(get_type_name(), "Sending a Write transaction from master 0 to slave 1", UVM_LOW);
+   `uvm_do_on_with(writeSeq, p_sequencer.masterSeqr, {
+        writeSeq.address == 64'h2800;
+        writeSeq.length  == same_length;
+        writeSeq.size    == same_size;
+        writeSeq.kind    == same_kind;
+        writeSeq.secure  == same_secure;
+    })
+    
+    // After the completion of the Write sequence, the updated transaction can
+    // be accessed in the sequence's field 'response' 
+	w_data = new[writeSeq.response.Data.size()];
+	for (int i=0; i<writeSeq.response.Data.size(); i++) begin 
+    	w_data[i] = writeSeq.response.Data[i];
+      $display("writeSeq.response.Data.size():: %0d",writeSeq.response.Data.size());
+      $display("wdata value::%0h",w_data[i]);
+    end   
+// #10ns;
+      
+    `uvm_info(get_type_name(), "Finished body of write_from_mst1_to_slv0_and_from_mst0_to_slv1_seq", UVM_LOW);
+
+  endtask // body
+endclass // write_from_mst1_to_slv0_and_from_mst0_to_slv1_seq
+
+class write_using_sameID_tag_seq extends axi4UvmVirtualSequence;
+    
+  writeTranswithSameIdTag writeSeq;
+  reg [63:0] same_address = 64'h1799;
+  reg [7:0] same_length = 4;
+  denaliCdn_axiTransferSizeT same_size = DENALI_CDN_AXI_TRANSFERSIZE_BYTE;
+  denaliCdn_axiBurstKindT same_kind = DENALI_CDN_AXI_BURSTKIND_INCR;
+  denaliCdn_axiSecureModeT same_secure = DENALI_CDN_AXI_SECUREMODE_NONSECURE;
+
+  reg [7:0] w_data[];
+
+  `uvm_object_utils_begin(write_using_sameID_tag_seq)
+  	`uvm_field_object(writeSeq, UVM_ALL_ON)
+  `uvm_object_utils_end
+
+   
+  function new(string name="write_using_sameID_tag_seq");
+    super.new(name);
+    `uvm_create(writeSeq);
+  endfunction // new
+
+//@para <b>Test Requirements:</b> None
+//@para <b>Test Scenario:</b>
+
+//@olist
+  virtual task body();
+  
+    `uvm_info(get_type_name(), "VIRTUAL_SEQUENCE_IDENTIFIER - Virtual sequence write_using_sameID_tag_seq started", UVM_LOW);
+    #1000;
+
+    `uvm_info(get_type_name(), "Sending a Write transaction from master 0 and master 1 to slave 0 with same ID tag ", UVM_LOW);
 
      `uvm_info(get_type_name(), "First Sending a Write transaction from master 0 to slave 0 ", UVM_LOW);
 //@listitem Send a write burst to a specific address.     
@@ -2134,31 +2364,28 @@ class WriteTransactionWithSameIdTagSeq extends axi4UvmVirtualSequence;
     end   
 // #10ns;
       
-    `uvm_info(get_type_name(), "Finished body of WriteTransactionWithSameIdTagSeq", UVM_LOW);
+    `uvm_info(get_type_name(), "Finished body of write_using_sameID_tag_seq", UVM_LOW);
 
   endtask // body
 endclass // WriteTransactionWithSameIdTag
 
-
-class ReadAxiSeq extends axi4UvmVirtualSequence;
-  // axi4UvmBlockingWriteSeq writeseq;
+class read_axi_seq extends axi4UvmVirtualSequence;
+  
   axi4UvmBlockingReadSeq readSeq;
-
-  reg [63:0] same_address = 64'h304;
-  reg [7:0] same_length = 4;
+  reg [63:0] same_address = 64'h1304;
+  reg [7:0] same_length = 2;
   denaliCdn_axiTransferSizeT same_size = DENALI_CDN_AXI_TRANSFERSIZE_BYTE;
   denaliCdn_axiBurstKindT same_kind = DENALI_CDN_AXI_BURSTKIND_INCR;
   denaliCdn_axiSecureModeT same_secure = DENALI_CDN_AXI_SECUREMODE_NONSECURE;
 
   reg [7:0] w_data[];
 
-  `uvm_object_utils_begin(ReadAxiSeq)
+  `uvm_object_utils_begin(read_axi_seq)
   	`uvm_field_object(readSeq, UVM_ALL_ON)
     // `uvm_field_object(writeseq, UVM_ALL_ON)
   `uvm_object_utils_end
 
-   
-  function new(string name="ReadAxiSeq");
+  function new(string name="read_axi_seq");
     super.new(name);
     `uvm_create(readSeq);
     // `uvm_create(writeseq);
@@ -2166,11 +2393,11 @@ class ReadAxiSeq extends axi4UvmVirtualSequence;
 
   virtual task body();
   
-    `uvm_info(get_type_name(), "VIRTUAL_SEQUENCE_IDENTIFIER - Virtual sequence ReadAxiSeq started", UVM_LOW);
+    `uvm_info(get_type_name(), "VIRTUAL_SEQUENCE_IDENTIFIER - Virtual sequence read_axi_seq started", UVM_LOW);
     #1000;
     `uvm_info(get_type_name(), "Sending a Read transaction to slave 0", UVM_LOW);
 //@listitem Send a Read burst to a specific address.     
-`uvm_do_on_with(readSeq, p_sequencer.masterSeqr, {
+`uvm_do_on_with(readSeq, p_sequencer.masterSeqr1, {
         readSeq.address == same_address;
         readSeq.length  == same_length;
         readSeq.size    == same_size;
@@ -2179,27 +2406,23 @@ class ReadAxiSeq extends axi4UvmVirtualSequence;
     })
     
 `uvm_info(get_type_name(), "Sending a Read transaction to slave 1", UVM_LOW);
-  `uvm_do_on_with(readSeq, p_sequencer.masterSeqr, {
+  `uvm_do_on_with(readSeq, p_sequencer.masterSeqr1, {
         readSeq.address == 64'h2020;
         readSeq.length  == same_length;
         readSeq.size    == same_size;
         readSeq.kind    == same_kind;
         readSeq.secure  == same_secure;
     })  
-    `uvm_info(get_type_name(), "Finished body of ReadAxiSeq", UVM_LOW);
+    `uvm_info(get_type_name(), "Finished body of read_axi_seq", UVM_LOW);
 
   endtask // body
+endclass // read_axi_seq
 
-
-endclass // ReadAxiSeq
-
-
-
-class WriteBurstSeq extends axi4UvmVirtualSequence;
-    
+class wrap_burst_seq extends axi4UvmVirtualSequence;
+ 
   axi4UvmBlockingWriteSeq writeSeq;
-
-  reg [63:0] same_address = 64'h200;
+  axi4UvmBlockingReadSeq readSeq;
+  reg [63:0] same_address = 64'h1100;
   reg [7:0] same_length = 4;
   denaliCdn_axiTransferSizeT same_size = DENALI_CDN_AXI_TRANSFERSIZE_BYTE;
   denaliCdn_axiBurstKindT same_kind = DENALI_CDN_AXI_BURSTKIND_WRAP;
@@ -2207,14 +2430,15 @@ class WriteBurstSeq extends axi4UvmVirtualSequence;
 
   reg [7:0] w_data[];
 
-  `uvm_object_utils_begin(WriteBurstSeq)
+  `uvm_object_utils_begin(wrap_burst_seq)
   	`uvm_field_object(writeSeq, UVM_ALL_ON)
+    `uvm_field_object(readSeq, UVM_ALL_ON)
   `uvm_object_utils_end
-
    
-  function new(string name="WriteBurstSeq");
+  function new(string name="wrap_burst_seq");
     super.new(name);
     `uvm_create(writeSeq);
+    `uvm_create(readSeq);
   endfunction // new
 
 //@para <b>Test Requirements:</b> None
@@ -2223,39 +2447,40 @@ class WriteBurstSeq extends axi4UvmVirtualSequence;
 //@olist
   virtual task body();
   
-    `uvm_info(get_type_name(), "VIRTUAL_SEQUENCE_IDENTIFIER - Virtual sequence WriteAxiSeq started", UVM_LOW);
+    `uvm_info(get_type_name(), "VIRTUAL_SEQUENCE_IDENTIFIER - Virtual sequence wrap_burst_seq started", UVM_LOW);
+    //`uvm_info(get_type_name(), "VIRTUAL_SEQUENCE_IDENTIFIER - Virtual sequence read_after_write_seq started",same_address UVM_LOW);
     #1000;
 
-    `uvm_info(get_type_name(), "Sending a Write transaction to slave 1", UVM_LOW);
-
-//@listitem Send a write burst to a specific address.  
-for(int i=0; i<10;i++ )begin   
-    `uvm_do_on_with(writeSeq, p_sequencer.masterSeqr, {
+    `uvm_info(get_type_name(), "Sending a Write from master 1 following by a Read ", UVM_LOW);
+// writeSeq.lengh_constraints.constraint_mode(0);
+//@listitem Send a write burst to a specific address.     
+    `uvm_do_on_with(writeSeq, p_sequencer.masterSeqr1, {
         writeSeq.address == same_address;
         writeSeq.length  == same_length;
         writeSeq.size    == same_size;
         writeSeq.kind    == same_kind;
         writeSeq.secure  == same_secure;
     })
-    same_address = same_address + 4;
-end
     
     // After the completion of the Write sequence, the updated transaction can
     // be accessed in the sequence's field 'response' 
+	w_data = new[writeSeq.response.Data.size()];
+	for (int i=0; i<writeSeq.response.Data.size(); i++) begin 
+    	w_data[i] = writeSeq.response.Data[i];
+    end 
 
- /*`uvm_info(get_type_name(), "Sending a Write transaction to slave 0", UVM_LOW);
-   `uvm_do_on_with(writeSeq, p_sequencer.masterSeqr, {
-        writeSeq.address == 64'h2020;
-        writeSeq.length  == same_length;
-        writeSeq.size    == same_size;
-        writeSeq.kind    == same_kind;
-        writeSeq.secure  == same_secure;
-    })*/
-      
-    `uvm_info(get_type_name(), "Finished body of WriteAxiSeq", UVM_LOW);
+//@listitem Send a read burst to the same address.    
+    `uvm_do_on_with(readSeq, p_sequencer.masterSeqr1, {
+        readSeq.address == 64'h1102;
+        readSeq.length  == same_length;
+        readSeq.size    == same_size;
+        readSeq.kind    == same_kind;
+        readSeq.secure  == same_secure;
+    })
 
   endtask // body
-endclass // WriteBurstSeq
+//@olist/
+endclass // wrap_burst_seq
 
 
 

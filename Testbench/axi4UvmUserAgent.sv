@@ -52,7 +52,7 @@ class axi4UvmUserActiveSlaveAgent extends axi4UvmUserAgent;
   `uvm_component_utils_begin(axi4UvmUserActiveSlaveAgent)        
   `uvm_component_utils_end
 
-  `cdnAxiDeclareVif(virtual interface cdnAxi4ActiveSlaveInterface#(.ADDR_WIDTH(`CDN_AXI_ADDR_WIDTH),.DATA_WIDTH(`CDN_AXI_DATA_WIDTH)))
+  `cdnAxiDeclareVif(virtual interface cdnAxi4ActiveSlaveInterface#(.ID_WIDTH(`CDN_AXI_ID_WIDTH),.ADDR_WIDTH(`CDN_AXI_ADDR_WIDTH),.DATA_WIDTH(`CDN_AXI_DATA_WIDTH)))
 
   // ***************************************************************
   // Method : new

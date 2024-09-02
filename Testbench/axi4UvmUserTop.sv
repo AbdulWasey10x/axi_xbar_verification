@@ -28,6 +28,9 @@
 `ifndef CDN_AXI_DATA_WIDTH
   `define CDN_AXI_DATA_WIDTH 128
 `endif
+`ifndef CDN_AXI_ID_WIDTH
+  `define CDN_AXI_ID_WIDTH 15
+`endif
 
 
 package axi4UvmUser;

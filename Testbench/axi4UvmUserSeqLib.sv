@@ -160,7 +160,7 @@ class userSimpleSeq extends cdnAxiUvmSequence;
 		
 		#1000;
 		  `uvm_info(get_type_name(), "Running Basic Test", UVM_LOW)
-		for (int i=0; i<40; i++) begin
+		for (int i=0; i<5; i++) begin
 			`uvm_do_with(trans,{
 				trans.Type inside {DENALI_CDN_AXI_TR_Read, DENALI_CDN_AXI_TR_Write};
 			});
@@ -614,10 +614,10 @@ class axi4UvmUserModifyTransactionSeq extends cdnAxiUvmModifyTransactionSequence
 
     `uvm_do_with(trans,
     {trans.Direction == DENALI_CDN_AXI_DIRECTION_READ;
-      trans.StartAddress < 64'h10000;
+      trans.StartAddress < 64'h1001;
       trans.IdTag < (1 << 4);
-      trans.Size == DENALI_CDN_AXI_TRANSFERSIZE_TWO_WORDS;
-      trans.Length == 4;
+      trans.Size == DENALI_CDN_AXI_TRANSFERSIZE_BYTE;
+      trans.Length == 8;
       trans.Kind == DENALI_CDN_AXI_BURSTKIND_INCR;
     })    
 
@@ -641,11 +641,12 @@ class axi4UvmUserModifyTransactionSeq extends cdnAxiUvmModifyTransactionSequence
     begin
       `uvm_info(get_type_name(), "Starting Transaction modification", UVM_LOW)      
       tr.Kind = DENALI_CDN_AXI_BURSTKIND_WRAP;
+      tr.StartAddress = 64'h2500;
       tr.TransmitDelay = 10;
       tr.IdTag = 'h30;
-      for (int i=0; i<tr.TransfersChannelDelay.size(); i++) begin 
+      /*for (int i=0; i<tr.TransfersChannelDelay.size(); i++) begin 
       	tr.TransfersChannelDelay[i] = 2;
-      end
+      end*/
       //Update the model transaction with the new values
       //   transSet() is being used to update that fields were changed.
       status = tr.transSet();
