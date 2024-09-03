@@ -1,0 +1,1288 @@
+[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"Verification Metrics","All Average Grd":"76.36%","All Cov":"7960 / 23945 (33.24%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"Types","All Average Grd":"78.54%","All Cov":"2116 / 3937 (53.75%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"axi_pkg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"uvm_pkg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"DenaliSvMem","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"CdnSvVip","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"DenaliSvCdn_axi","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"cdnAxiUvm","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"axi4UvmUser","All Average Grd":"100%","All Cov":"15 / 15 (100%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"xbar_coverage::xbar_cg","All Average Grd":"100%","All Cov":"15 / 15 (100%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"Address","All Average Grd":"100%","All Cov":"4 / 4 (100%)","Assertion Status Grd":"n/a","bins_json":"bin0.json"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"Direction","All Average Grd":"100%","All Cov":"2 / 2 (100%)","Assertion Status Grd":"n/a","bins_json":"bin1.json"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"Kind","All Average Grd":"100%","All Cov":"2 / 2 (100%)","Assertion Status Grd":"n/a","bins_json":"bin2.json"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"Size","All Average Grd":"100%","All Cov":"3 / 3 (100%)","Assertion Status Grd":"n/a","bins_json":"bin3.json"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"Length","All Average Grd":"100%","All Cov":"1 / 1 (100%)","Assertion Status Grd":"n/a","bins_json":"bin4.json"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"Resp","All Average Grd":"100%","All Cov":"1 / 1 (100%)","Assertion Status Grd":"n/a","bins_json":"bin5.json"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"Qos","All Average Grd":"100%","All Cov":"2 / 2 (100%)","Assertion Status Grd":"n/a","bins_json":"bin6.json"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"cf_math_pkg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"testbench","All Average Grd":"65.91%","All Cov":"10 / 13 (76.92%)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"cdnAxi4Interface","All Average Grd":"50.86%","All Cov":"364 / 704 (51.7%)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"cdnAxi4ActiveMasterInterface","All Average Grd":"76.74%","All Cov":"619 / 1155 (53.59%)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"cdnAxi4ActiveSlaveInterface","All Average Grd":"72.02%","All Cov":"409 / 925 (44.22%)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"cdnAxi4PassiveInterface","All Average Grd":"42.24%","All Cov":"355 / 695 (51.08%)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"AXI_BUS","All Average Grd":"78.12%","All Cov":"282 / 361 (78.12%)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"axi_xbar_intf#(struct packed{ int unsigned idx; logic [31:0] start_addr; logic [31:0] end_addr;  } )","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"axi_xbar_intf#(struct packed{ int unsigned idx; logic [31:0] start_addr; logic [31:0] end_addr;  } ).gen_assign_mst","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"axi_xbar_intf#(struct packed{ int unsigned idx; logic [31:0] start_addr; logic [31:0] end_addr;  } ).gen_assign_slv","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"axi_xbar#(struct packed{ id_slv_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; atop_t atop; user_t user;  } , struct packed{ id_mst_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; atop_t atop; user_t user;  } , struct packed{ data_t data; strb_t strb; logic last; user_t user;  } , struct packed{ id_slv_t id; resp_t resp; user_t user;  } , struct packed{ id_mst_t id; resp_t resp; user_t user;  } , struct packed{ id_slv_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; user_t user;  } , struct packed{ id_mst_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; user_t user;  } , struct packed{ id_slv_t id; data_t data; resp_t resp; logic last; user_t user;  } , struct packed{ id_mst_t id; data_t data; resp_t resp; logic last; user_t user;  } , struct packed{ slv_aw_chan_t aw; logic aw_valid; w_chan_t w; logic w_valid; logic b_ready; slv_ar_chan_t ar; logic ar_valid; logic r_ready;  } , struct packed{ logic aw_ready; logic ar_ready; logic w_ready; logic b_valid; slv_b_chan_t b; logic r_valid; slv_r_chan_t r;  } , struct packed{ mst_aw_chan_t aw; logic aw_valid; w_chan_t w; logic w_valid; logic b_ready; mst_ar_chan_t ar; logic ar_valid; logic r_ready;  } , struct packed{ logic aw_ready; logic ar_ready; logic w_ready; logic b_valid; mst_b_chan_t b; logic r_valid; mst_r_chan_t r;  } , struct packed{ int unsigned idx; logic [31:0] start_addr; logic [31:0] end_addr;  } )","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"axi_xbar#(struct packed{ id_slv_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; atop_t atop; user_t user;  } , struct packed{ id_mst_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; atop_t atop; user_t user;  } , struct packed{ data_t data; strb_t strb; logic last; user_t user;  } , struct packed{ id_slv_t id; resp_t resp; user_t user;  } , struct packed{ id_mst_t id; resp_t resp; user_t user;  } , struct packed{ id_slv_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; user_t user;  } , struct packed{ id_mst_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; user_t user;  } , struct packed{ id_slv_t id; data_t data; resp_t resp; logic last; user_t user;  } , struct packed{ id_mst_t id; data_t data; resp_t resp; logic last; user_t user;  } , struct packed{ slv_aw_chan_t aw; logic aw_valid; w_chan_t w; logic w_valid; logic b_ready; slv_ar_chan_t ar; logic ar_valid; logic r_ready;  } , struct packed{ logic aw_ready; logic ar_ready; logic w_ready; logic b_valid; slv_b_chan_t b; logic r_valid; slv_r_chan_t r;  } , struct packed{ mst_aw_chan_t aw; logic aw_valid; w_chan_t w; logic w_valid; logic b_ready; mst_ar_chan_t ar; logic ar_valid; logic r_ready;  } , struct packed{ logic aw_ready; logic ar_ready; logic w_ready; logic b_valid; mst_b_chan_t b; logic r_valid; mst_r_chan_t r;  } , struct packed{ int unsigned idx; logic [31:0] start_addr; logic [31:0] end_addr;  } ).gen_slv_port_demux","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"addr_decode#(logic [31:0], struct packed{ int unsigned idx; logic [31:0] start_addr; logic [31:0] end_addr;  } , logic [0:0])","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"addr_decode_dync#(logic [31:0], struct packed{ int unsigned idx; logic [31:0] start_addr; logic [31:0] end_addr;  } , logic [0:0])","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"axi_demux#(struct packed{ id_slv_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; atop_t atop; user_t user;  } , struct packed{ data_t data; strb_t strb; logic last; user_t user;  } , struct packed{ id_slv_t id; resp_t resp; user_t user;  } , struct packed{ id_slv_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; user_t user;  } , struct packed{ id_slv_t id; data_t data; resp_t resp; logic last; user_t user;  } , struct packed{ slv_aw_chan_t aw; logic aw_valid; w_chan_t w; logic w_valid; logic b_ready; slv_ar_chan_t ar; logic ar_valid; logic r_ready;  } , struct packed{ logic aw_ready; logic ar_ready; logic w_ready; logic b_valid; slv_b_chan_t b; logic r_valid; slv_r_chan_t r;  } , logic [1:0])","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register#(struct packed{ id_slv_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; atop_t atop; user_t user;  } )","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable#(struct packed{ id_slv_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; atop_t atop; user_t user;  } )","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable#(struct packed{ id_slv_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; atop_t atop; user_t user;  } ).gen_spill_reg_F","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register#(logic [1:0])","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable#(logic [1:0])","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable#(logic [1:0]).gen_spill_reg_F","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register#(struct packed{ data_t data; strb_t strb; logic last; user_t user;  } )","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable#(struct packed{ data_t data; strb_t strb; logic last; user_t user;  } )","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable#(struct packed{ data_t data; strb_t strb; logic last; user_t user;  } ).gen_bypass_T","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register#(struct packed{ id_slv_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; user_t user;  } )","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable#(struct packed{ id_slv_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; user_t user;  } )","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable#(struct packed{ id_slv_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; user_t user;  } ).gen_spill_reg_F","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register#(struct packed{ id_slv_t id; resp_t resp; user_t user;  } )","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable#(struct packed{ id_slv_t id; resp_t resp; user_t user;  } )","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable#(struct packed{ id_slv_t id; resp_t resp; user_t user;  } ).gen_bypass_T","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register#(struct packed{ id_slv_t id; data_t data; resp_t resp; logic last; user_t user;  } )","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable#(struct packed{ id_slv_t id; data_t data; resp_t resp; logic last; user_t user;  } )","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable#(struct packed{ id_slv_t id; data_t data; resp_t resp; logic last; user_t user;  } ).gen_bypass_T","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"axi_demux_simple#(struct packed{ slv_aw_chan_t aw; logic aw_valid; w_chan_t w; logic w_valid; logic b_ready; slv_ar_chan_t ar; logic ar_valid; logic r_ready;  } , struct packed{ logic aw_ready; logic ar_ready; logic w_ready; logic b_valid; slv_b_chan_t b; logic r_valid; slv_r_chan_t r;  } , logic [1:0])","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"axi_demux_simple#(struct packed{ slv_aw_chan_t aw; logic aw_valid; w_chan_t w; logic w_valid; logic b_ready; slv_ar_chan_t ar; logic ar_valid; logic r_ready;  } , struct packed{ logic aw_ready; logic ar_ready; logic w_ready; logic b_valid; slv_b_chan_t b; logic r_valid; slv_r_chan_t r;  } , logic [1:0]).genblk1_F","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"axi_demux_simple#(struct packed{ slv_aw_chan_t aw; logic aw_valid; w_chan_t w; logic w_valid; logic b_ready; slv_ar_chan_t ar; logic ar_valid; logic r_ready;  } , struct packed{ logic aw_ready; logic ar_ready; logic w_ready; logic b_valid; slv_b_chan_t b; logic r_valid; slv_r_chan_t r;  } , logic [1:0]).genblk1_F.gen_aw_id_counter_F","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"axi_demux_id_counters#(logic [1:0])","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"axi_demux_id_counters#(logic [1:0]).gen_counters","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"delta_counter","All Average Grd":"91.38%","All Cov":"36 / 41 (87.8%)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"delta_counter.gen_transient_overflow_F","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"counter","All Average Grd":"86.67%","All Cov":"13 / 15 (86.67%)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"rr_arb_tree#(logic, logic [1:0])","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"rr_arb_tree#(logic, logic [1:0]).gen_arbiter_F","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"rr_arb_tree#(logic, logic [1:0]).gen_arbiter_F.gen_int_rr_F","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"rr_arb_tree#(logic, logic [1:0]).gen_arbiter_F.gen_int_rr_F.gen_lock_T","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"rr_arb_tree#(logic, logic [1:0]).gen_arbiter_F.gen_int_rr_F.gen_fair_arb_T","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"rr_arb_tree#(logic, logic [1:0]).gen_arbiter_F.gen_int_rr_F.gen_fair_arb_T.gen_mask","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"lzc","All Average Grd":"100%","All Cov":"8 / 8 (100%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"validate_params.__assert_2","All Average Grd":"100%","All Cov":"1 / 1 (100%)","Assertion Status Grd":"100%"}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"lzc.gen_lzc_F","All Average Grd":"100%","All Cov":"5 / 5 (100%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"__assert_1","All Average Grd":"100%","All Cov":"1 / 1 (100%)","Assertion Status Grd":"100%"}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"lzc.gen_lzc_F.g_index_lut","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"lzc.gen_lzc_F.g_levels","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"lzc.gen_lzc_F.g_levels.g_not_last_level_F","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"lzc.gen_lzc_F.g_levels.g_not_last_level_F.g_level","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"lzc.gen_lzc_F.g_levels.g_last_level_T","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"lzc.gen_lzc_F.g_levels.g_last_level_T.g_level","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"lzc.gen_lzc_F.g_levels.g_last_level_T.g_level.g_reduce_T","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"lzc.gen_lzc_F.g_levels.g_last_level_T.g_level.g_base_T","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"rr_arb_tree#(logic, logic [1:0]).gen_arbiter_F.gen_levels","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"rr_arb_tree#(logic, logic [1:0]).gen_arbiter_F.gen_levels.gen_level","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"rr_arb_tree#(logic, logic [1:0]).gen_arbiter_F.gen_levels.gen_level.gen_other_levels_F","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"rr_arb_tree#(logic, logic [1:0]).gen_arbiter_F.gen_levels.gen_level.gen_first_level_T","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"rr_arb_tree#(logic, logic [1:0]).gen_arbiter_F.gen_levels.gen_level.gen_first_level_T.gen_reduce_T","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"rr_arb_tree#(logic, logic [1:0]).gen_arbiter_F.gen_levels.gen_level.gen_first_level_T.gen_first_T","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"axi_demux_simple#(struct packed{ slv_aw_chan_t aw; logic aw_valid; w_chan_t w; logic w_valid; logic b_ready; slv_ar_chan_t ar; logic ar_valid; logic r_ready;  } , struct packed{ logic aw_ready; logic ar_ready; logic w_ready; logic b_valid; slv_b_chan_t b; logic r_valid; slv_r_chan_t r;  } , logic [1:0]).genblk1_F.gen_ar_id_counter_F","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"axi_demux_simple#(struct packed{ slv_aw_chan_t aw; logic aw_valid; w_chan_t w; logic w_valid; logic b_ready; slv_ar_chan_t ar; logic ar_valid; logic r_ready;  } , struct packed{ logic aw_ready; logic ar_ready; logic w_ready; logic b_valid; slv_b_chan_t b; logic r_valid; slv_r_chan_t r;  } , logic [1:0]).genblk1_F.gen_b_channels","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"axi_err_slv#(struct packed{ slv_aw_chan_t aw; logic aw_valid; w_chan_t w; logic w_valid; logic b_ready; slv_ar_chan_t ar; logic ar_valid; logic r_ready;  } , struct packed{ logic aw_ready; logic ar_ready; logic w_ready; logic b_valid; slv_b_chan_t b; logic r_valid; slv_r_chan_t r;  } )","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"axi_err_slv#(struct packed{ slv_aw_chan_t aw; logic aw_valid; w_chan_t w; logic w_valid; logic b_ready; slv_ar_chan_t ar; logic ar_valid; logic r_ready;  } , struct packed{ logic aw_ready; logic ar_ready; logic w_ready; logic b_valid; slv_b_chan_t b; logic r_valid; slv_r_chan_t r;  } ).genblk1_T","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"axi_atop_filter#(struct packed{ slv_aw_chan_t aw; logic aw_valid; w_chan_t w; logic w_valid; logic b_ready; slv_ar_chan_t ar; logic ar_valid; logic r_ready;  } , struct packed{ logic aw_ready; logic ar_ready; logic w_ready; logic b_valid; slv_b_chan_t b; logic r_valid; slv_r_chan_t r;  } )","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"stream_register#(struct packed{ len_t len;  } )","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"fifo_v3#(logic [13:0])","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"fifo_v3#(logic [13:0]).gen_fifo_F","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"fifo_v3#(struct packed{ id_t id; len_t len;  } )","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"fifo_v3#(struct packed{ id_t id; len_t len;  } ).gen_fifo_F","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"axi_xbar#(struct packed{ id_slv_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; atop_t atop; user_t user;  } , struct packed{ id_mst_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; atop_t atop; user_t user;  } , struct packed{ data_t data; strb_t strb; logic last; user_t user;  } , struct packed{ id_slv_t id; resp_t resp; user_t user;  } , struct packed{ id_mst_t id; resp_t resp; user_t user;  } , struct packed{ id_slv_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; user_t user;  } , struct packed{ id_mst_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; user_t user;  } , struct packed{ id_slv_t id; data_t data; resp_t resp; logic last; user_t user;  } , struct packed{ id_mst_t id; data_t data; resp_t resp; logic last; user_t user;  } , struct packed{ slv_aw_chan_t aw; logic aw_valid; w_chan_t w; logic w_valid; logic b_ready; slv_ar_chan_t ar; logic ar_valid; logic r_ready;  } , struct packed{ logic aw_ready; logic ar_ready; logic w_ready; logic b_valid; slv_b_chan_t b; logic r_valid; slv_r_chan_t r;  } , struct packed{ mst_aw_chan_t aw; logic aw_valid; w_chan_t w; logic w_valid; logic b_ready; mst_ar_chan_t ar; logic ar_valid; logic r_ready;  } , struct packed{ logic aw_ready; logic ar_ready; logic w_ready; logic b_valid; mst_b_chan_t b; logic r_valid; mst_r_chan_t r;  } , struct packed{ int unsigned idx; logic [31:0] start_addr; logic [31:0] end_addr;  } ).gen_xbar_slv_cross","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"axi_xbar#(struct packed{ id_slv_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; atop_t atop; user_t user;  } , struct packed{ id_mst_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; atop_t atop; user_t user;  } , struct packed{ data_t data; strb_t strb; logic last; user_t user;  } , struct packed{ id_slv_t id; resp_t resp; user_t user;  } , struct packed{ id_mst_t id; resp_t resp; user_t user;  } , struct packed{ id_slv_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; user_t user;  } , struct packed{ id_mst_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; user_t user;  } , struct packed{ id_slv_t id; data_t data; resp_t resp; logic last; user_t user;  } , struct packed{ id_mst_t id; data_t data; resp_t resp; logic last; user_t user;  } , struct packed{ slv_aw_chan_t aw; logic aw_valid; w_chan_t w; logic w_valid; logic b_ready; slv_ar_chan_t ar; logic ar_valid; logic r_ready;  } , struct packed{ logic aw_ready; logic ar_ready; logic w_ready; logic b_valid; slv_b_chan_t b; logic r_valid; slv_r_chan_t r;  } , struct packed{ mst_aw_chan_t aw; logic aw_valid; w_chan_t w; logic w_valid; logic b_ready; mst_ar_chan_t ar; logic ar_valid; logic r_ready;  } , struct packed{ logic aw_ready; logic ar_ready; logic w_ready; logic b_valid; mst_b_chan_t b; logic r_valid; mst_r_chan_t r;  } , struct packed{ int unsigned idx; logic [31:0] start_addr; logic [31:0] end_addr;  } ).gen_xbar_slv_cross.gen_xbar_mst_cross","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"axi_xbar#(struct packed{ id_slv_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; atop_t atop; user_t user;  } , struct packed{ id_mst_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; atop_t atop; user_t user;  } , struct packed{ data_t data; strb_t strb; logic last; user_t user;  } , struct packed{ id_slv_t id; resp_t resp; user_t user;  } , struct packed{ id_mst_t id; resp_t resp; user_t user;  } , struct packed{ id_slv_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; user_t user;  } , struct packed{ id_mst_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; user_t user;  } , struct packed{ id_slv_t id; data_t data; resp_t resp; logic last; user_t user;  } , struct packed{ id_mst_t id; data_t data; resp_t resp; logic last; user_t user;  } , struct packed{ slv_aw_chan_t aw; logic aw_valid; w_chan_t w; logic w_valid; logic b_ready; slv_ar_chan_t ar; logic ar_valid; logic r_ready;  } , struct packed{ logic aw_ready; logic ar_ready; logic w_ready; logic b_valid; slv_b_chan_t b; logic r_valid; slv_r_chan_t r;  } , struct packed{ mst_aw_chan_t aw; logic aw_valid; w_chan_t w; logic w_valid; logic b_ready; mst_ar_chan_t ar; logic ar_valid; logic r_ready;  } , struct packed{ logic aw_ready; logic ar_ready; logic w_ready; logic b_valid; mst_b_chan_t b; logic r_valid; mst_r_chan_t r;  } , struct packed{ int unsigned idx; logic [31:0] start_addr; logic [31:0] end_addr;  } ).gen_xbar_slv_cross.gen_xbar_mst_cross.gen_connection_T","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"axi_multicut#(struct packed{ id_slv_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; atop_t atop; user_t user;  } , struct packed{ data_t data; strb_t strb; logic last; user_t user;  } , struct packed{ id_slv_t id; resp_t resp; user_t user;  } , struct packed{ id_slv_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; user_t user;  } , struct packed{ id_slv_t id; data_t data; resp_t resp; logic last; user_t user;  } , struct packed{ slv_aw_chan_t aw; logic aw_valid; w_chan_t w; logic w_valid; logic b_ready; slv_ar_chan_t ar; logic ar_valid; logic r_ready;  } , struct packed{ logic aw_ready; logic ar_ready; logic w_ready; logic b_valid; slv_b_chan_t b; logic r_valid; slv_r_chan_t r;  } )","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"axi_multicut#(struct packed{ id_slv_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; atop_t atop; user_t user;  } , struct packed{ data_t data; strb_t strb; logic last; user_t user;  } , struct packed{ id_slv_t id; resp_t resp; user_t user;  } , struct packed{ id_slv_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; user_t user;  } , struct packed{ id_slv_t id; data_t data; resp_t resp; logic last; user_t user;  } , struct packed{ slv_aw_chan_t aw; logic aw_valid; w_chan_t w; logic w_valid; logic b_ready; slv_ar_chan_t ar; logic ar_valid; logic r_ready;  } , struct packed{ logic aw_ready; logic ar_ready; logic w_ready; logic b_valid; slv_b_chan_t b; logic r_valid; slv_r_chan_t r;  } ).gen_axi_cut_F","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"axi_multicut#(struct packed{ id_slv_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; atop_t atop; user_t user;  } , struct packed{ data_t data; strb_t strb; logic last; user_t user;  } , struct packed{ id_slv_t id; resp_t resp; user_t user;  } , struct packed{ id_slv_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; user_t user;  } , struct packed{ id_slv_t id; data_t data; resp_t resp; logic last; user_t user;  } , struct packed{ slv_aw_chan_t aw; logic aw_valid; w_chan_t w; logic w_valid; logic b_ready; slv_ar_chan_t ar; logic ar_valid; logic r_ready;  } , struct packed{ logic aw_ready; logic ar_ready; logic w_ready; logic b_valid; slv_b_chan_t b; logic r_valid; slv_r_chan_t r;  } ).gen_axi_cut_F.gen_axi_cuts","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"axi_cut#(struct packed{ id_slv_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; atop_t atop; user_t user;  } , struct packed{ data_t data; strb_t strb; logic last; user_t user;  } , struct packed{ id_slv_t id; resp_t resp; user_t user;  } , struct packed{ id_slv_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; user_t user;  } , struct packed{ id_slv_t id; data_t data; resp_t resp; logic last; user_t user;  } , struct packed{ slv_aw_chan_t aw; logic aw_valid; w_chan_t w; logic w_valid; logic b_ready; slv_ar_chan_t ar; logic ar_valid; logic r_ready;  } , struct packed{ logic aw_ready; logic ar_ready; logic w_ready; logic b_valid; slv_b_chan_t b; logic r_valid; slv_r_chan_t r;  } )","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable#(struct packed{ data_t data; strb_t strb; logic last; user_t user;  } ).gen_spill_reg_F","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable#(struct packed{ id_slv_t id; resp_t resp; user_t user;  } ).gen_spill_reg_F","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable#(struct packed{ id_slv_t id; data_t data; resp_t resp; logic last; user_t user;  } ).gen_spill_reg_F","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"axi_xbar#(struct packed{ id_slv_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; atop_t atop; user_t user;  } , struct packed{ id_mst_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; atop_t atop; user_t user;  } , struct packed{ data_t data; strb_t strb; logic last; user_t user;  } , struct packed{ id_slv_t id; resp_t resp; user_t user;  } , struct packed{ id_mst_t id; resp_t resp; user_t user;  } , struct packed{ id_slv_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; user_t user;  } , struct packed{ id_mst_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; user_t user;  } , struct packed{ id_slv_t id; data_t data; resp_t resp; logic last; user_t user;  } , struct packed{ id_mst_t id; data_t data; resp_t resp; logic last; user_t user;  } , struct packed{ slv_aw_chan_t aw; logic aw_valid; w_chan_t w; logic w_valid; logic b_ready; slv_ar_chan_t ar; logic ar_valid; logic r_ready;  } , struct packed{ logic aw_ready; logic ar_ready; logic w_ready; logic b_valid; slv_b_chan_t b; logic r_valid; slv_r_chan_t r;  } , struct packed{ mst_aw_chan_t aw; logic aw_valid; w_chan_t w; logic w_valid; logic b_ready; mst_ar_chan_t ar; logic ar_valid; logic r_ready;  } , struct packed{ logic aw_ready; logic ar_ready; logic w_ready; logic b_valid; mst_b_chan_t b; logic r_valid; mst_r_chan_t r;  } , struct packed{ int unsigned idx; logic [31:0] start_addr; logic [31:0] end_addr;  } ).gen_mst_port_mux","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"axi_mux#(struct packed{ id_slv_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; atop_t atop; user_t user;  } , struct packed{ id_mst_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; atop_t atop; user_t user;  } , struct packed{ data_t data; strb_t strb; logic last; user_t user;  } , struct packed{ id_slv_t id; resp_t resp; user_t user;  } , struct packed{ id_mst_t id; resp_t resp; user_t user;  } , struct packed{ id_slv_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; user_t user;  } , struct packed{ id_mst_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; user_t user;  } , struct packed{ id_slv_t id; data_t data; resp_t resp; logic last; user_t user;  } , struct packed{ id_mst_t id; data_t data; resp_t resp; logic last; user_t user;  } , struct packed{ slv_aw_chan_t aw; logic aw_valid; w_chan_t w; logic w_valid; logic b_ready; slv_ar_chan_t ar; logic ar_valid; logic r_ready;  } , struct packed{ logic aw_ready; logic ar_ready; logic w_ready; logic b_valid; slv_b_chan_t b; logic r_valid; slv_r_chan_t r;  } , struct packed{ mst_aw_chan_t aw; logic aw_valid; w_chan_t w; logic w_valid; logic b_ready; mst_ar_chan_t ar; logic ar_valid; logic r_ready;  } , struct packed{ logic aw_ready; logic ar_ready; logic w_ready; logic b_valid; mst_b_chan_t b; logic r_valid; mst_r_chan_t r;  } )","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"axi_mux#(struct packed{ id_slv_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; atop_t atop; user_t user;  } , struct packed{ id_mst_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; atop_t atop; user_t user;  } , struct packed{ data_t data; strb_t strb; logic last; user_t user;  } , struct packed{ id_slv_t id; resp_t resp; user_t user;  } , struct packed{ id_mst_t id; resp_t resp; user_t user;  } , struct packed{ id_slv_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; user_t user;  } , struct packed{ id_mst_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; user_t user;  } , struct packed{ id_slv_t id; data_t data; resp_t resp; logic last; user_t user;  } , struct packed{ id_mst_t id; data_t data; resp_t resp; logic last; user_t user;  } , struct packed{ slv_aw_chan_t aw; logic aw_valid; w_chan_t w; logic w_valid; logic b_ready; slv_ar_chan_t ar; logic ar_valid; logic r_ready;  } , struct packed{ logic aw_ready; logic ar_ready; logic w_ready; logic b_valid; slv_b_chan_t b; logic r_valid; slv_r_chan_t r;  } , struct packed{ mst_aw_chan_t aw; logic aw_valid; w_chan_t w; logic w_valid; logic b_ready; mst_ar_chan_t ar; logic ar_valid; logic r_ready;  } , struct packed{ logic aw_ready; logic ar_ready; logic w_ready; logic b_valid; mst_b_chan_t b; logic r_valid; mst_r_chan_t r;  } ).gen_mux_F","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"axi_mux#(struct packed{ id_slv_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; atop_t atop; user_t user;  } , struct packed{ id_mst_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; atop_t atop; user_t user;  } , struct packed{ data_t data; strb_t strb; logic last; user_t user;  } , struct packed{ id_slv_t id; resp_t resp; user_t user;  } , struct packed{ id_mst_t id; resp_t resp; user_t user;  } , struct packed{ id_slv_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; user_t user;  } , struct packed{ id_mst_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; user_t user;  } , struct packed{ id_slv_t id; data_t data; resp_t resp; logic last; user_t user;  } , struct packed{ id_mst_t id; data_t data; resp_t resp; logic last; user_t user;  } , struct packed{ slv_aw_chan_t aw; logic aw_valid; w_chan_t w; logic w_valid; logic b_ready; slv_ar_chan_t ar; logic ar_valid; logic r_ready;  } , struct packed{ logic aw_ready; logic ar_ready; logic w_ready; logic b_valid; slv_b_chan_t b; logic r_valid; slv_r_chan_t r;  } , struct packed{ mst_aw_chan_t aw; logic aw_valid; w_chan_t w; logic w_valid; logic b_ready; mst_ar_chan_t ar; logic ar_valid; logic r_ready;  } , struct packed{ logic aw_ready; logic ar_ready; logic w_ready; logic b_valid; mst_b_chan_t b; logic r_valid; mst_r_chan_t r;  } ).gen_mux_F.gen_id_prepend","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"axi_id_prepend#(struct packed{ id_slv_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; atop_t atop; user_t user;  } , struct packed{ data_t data; strb_t strb; logic last; user_t user;  } , struct packed{ id_slv_t id; resp_t resp; user_t user;  } , struct packed{ id_slv_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; user_t user;  } , struct packed{ id_slv_t id; data_t data; resp_t resp; logic last; user_t user;  } , struct packed{ id_mst_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; atop_t atop; user_t user;  } , struct packed{ data_t data; strb_t strb; logic last; user_t user;  } , struct packed{ id_mst_t id; resp_t resp; user_t user;  } , struct packed{ id_mst_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; user_t user;  } , struct packed{ id_mst_t id; data_t data; resp_t resp; logic last; user_t user;  } )","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"axi_id_prepend#(struct packed{ id_slv_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; atop_t atop; user_t user;  } , struct packed{ data_t data; strb_t strb; logic last; user_t user;  } , struct packed{ id_slv_t id; resp_t resp; user_t user;  } , struct packed{ id_slv_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; user_t user;  } , struct packed{ id_slv_t id; data_t data; resp_t resp; logic last; user_t user;  } , struct packed{ id_mst_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; atop_t atop; user_t user;  } , struct packed{ data_t data; strb_t strb; logic last; user_t user;  } , struct packed{ id_mst_t id; resp_t resp; user_t user;  } , struct packed{ id_mst_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; user_t user;  } , struct packed{ id_mst_t id; data_t data; resp_t resp; logic last; user_t user;  } ).gen_id_prepend","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"axi_id_prepend#(struct packed{ id_slv_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; atop_t atop; user_t user;  } , struct packed{ data_t data; strb_t strb; logic last; user_t user;  } , struct packed{ id_slv_t id; resp_t resp; user_t user;  } , struct packed{ id_slv_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; user_t user;  } , struct packed{ id_slv_t id; data_t data; resp_t resp; logic last; user_t user;  } , struct packed{ id_mst_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; atop_t atop; user_t user;  } , struct packed{ data_t data; strb_t strb; logic last; user_t user;  } , struct packed{ id_mst_t id; resp_t resp; user_t user;  } , struct packed{ id_mst_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; user_t user;  } , struct packed{ id_mst_t id; data_t data; resp_t resp; logic last; user_t user;  } ).gen_id_prepend.gen_prepend_F","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"rr_arb_tree#(struct packed{ id_mst_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; atop_t atop; user_t user;  } , logic [0:0])","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"rr_arb_tree#(struct packed{ id_mst_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; atop_t atop; user_t user;  } , logic [0:0]).gen_arbiter_F","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"rr_arb_tree#(struct packed{ id_mst_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; atop_t atop; user_t user;  } , logic [0:0]).gen_arbiter_F.gen_int_rr_F","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"rr_arb_tree#(struct packed{ id_mst_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; atop_t atop; user_t user;  } , logic [0:0]).gen_arbiter_F.gen_int_rr_F.gen_lock_T","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"rr_arb_tree#(struct packed{ id_mst_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; atop_t atop; user_t user;  } , logic [0:0]).gen_arbiter_F.gen_int_rr_F.gen_fair_arb_T","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"rr_arb_tree#(struct packed{ id_mst_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; atop_t atop; user_t user;  } , logic [0:0]).gen_arbiter_F.gen_int_rr_F.gen_fair_arb_T.gen_mask","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"rr_arb_tree#(struct packed{ id_mst_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; atop_t atop; user_t user;  } , logic [0:0]).gen_arbiter_F.gen_levels","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"rr_arb_tree#(struct packed{ id_mst_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; atop_t atop; user_t user;  } , logic [0:0]).gen_arbiter_F.gen_levels.gen_level","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"rr_arb_tree#(struct packed{ id_mst_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; atop_t atop; user_t user;  } , logic [0:0]).gen_arbiter_F.gen_levels.gen_level.gen_first_level_T","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"rr_arb_tree#(struct packed{ id_mst_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; atop_t atop; user_t user;  } , logic [0:0]).gen_arbiter_F.gen_levels.gen_level.gen_first_level_T.gen_reduce_T","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"fifo_v3#(logic [0:0])","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"fifo_v3#(logic [0:0]).gen_fifo_F","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register#(struct packed{ id_mst_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; atop_t atop; user_t user;  } )","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable#(struct packed{ id_mst_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; atop_t atop; user_t user;  } )","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable#(struct packed{ id_mst_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; atop_t atop; user_t user;  } ).gen_spill_reg_F","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register#(struct packed{ id_mst_t id; resp_t resp; user_t user;  } )","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable#(struct packed{ id_mst_t id; resp_t resp; user_t user;  } )","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable#(struct packed{ id_mst_t id; resp_t resp; user_t user;  } ).gen_bypass_T","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"rr_arb_tree#(struct packed{ id_mst_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; user_t user;  } , logic [0:0])","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"rr_arb_tree#(struct packed{ id_mst_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; user_t user;  } , logic [0:0]).gen_arbiter_F","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"rr_arb_tree#(struct packed{ id_mst_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; user_t user;  } , logic [0:0]).gen_arbiter_F.gen_int_rr_F","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"rr_arb_tree#(struct packed{ id_mst_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; user_t user;  } , logic [0:0]).gen_arbiter_F.gen_int_rr_F.gen_lock_T","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"rr_arb_tree#(struct packed{ id_mst_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; user_t user;  } , logic [0:0]).gen_arbiter_F.gen_int_rr_F.gen_fair_arb_T","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"rr_arb_tree#(struct packed{ id_mst_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; user_t user;  } , logic [0:0]).gen_arbiter_F.gen_int_rr_F.gen_fair_arb_T.gen_mask","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"rr_arb_tree#(struct packed{ id_mst_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; user_t user;  } , logic [0:0]).gen_arbiter_F.gen_levels","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"rr_arb_tree#(struct packed{ id_mst_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; user_t user;  } , logic [0:0]).gen_arbiter_F.gen_levels.gen_level","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"rr_arb_tree#(struct packed{ id_mst_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; user_t user;  } , logic [0:0]).gen_arbiter_F.gen_levels.gen_level.gen_first_level_T","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"rr_arb_tree#(struct packed{ id_mst_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; user_t user;  } , logic [0:0]).gen_arbiter_F.gen_levels.gen_level.gen_first_level_T.gen_reduce_T","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register#(struct packed{ id_mst_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; user_t user;  } )","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable#(struct packed{ id_mst_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; user_t user;  } )","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable#(struct packed{ id_mst_t id; addr_t addr; len_t len; size_t size; burst_t burst; logic lock; cache_t cache; prot_t prot; qos_t qos; region_t region; user_t user;  } ).gen_spill_reg_F","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register#(struct packed{ id_mst_t id; data_t data; resp_t resp; logic last; user_t user;  } )","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable#(struct packed{ id_mst_t id; data_t data; resp_t resp; logic last; user_t user;  } )","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable#(struct packed{ id_mst_t id; data_t data; resp_t resp; logic last; user_t user;  } ).gen_bypass_T","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"Instances","All Average Grd":"74.19%","All Cov":"5844 / 20008 (29.21%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"axi_pkg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"uvm_pkg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"DenaliSvMem","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"CdnSvVip","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"DenaliSvCdn_axi","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"cdnAxiUvm","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"axi4UvmUser","All Average Grd":"100%","All Cov":"15 / 15 (100%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"xbar","All Average Grd":"100%","All Cov":"15 / 15 (100%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"Address","All Average Grd":"100%","All Cov":"4 / 4 (100%)","Assertion Status Grd":"n/a","bins_json":"bin7.json"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"Direction","All Average Grd":"100%","All Cov":"2 / 2 (100%)","Assertion Status Grd":"n/a","bins_json":"bin8.json"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"Kind","All Average Grd":"100%","All Cov":"2 / 2 (100%)","Assertion Status Grd":"n/a","bins_json":"bin9.json"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"Size","All Average Grd":"100%","All Cov":"3 / 3 (100%)","Assertion Status Grd":"n/a","bins_json":"bin10.json"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"Length","All Average Grd":"100%","All Cov":"1 / 1 (100%)","Assertion Status Grd":"n/a","bins_json":"bin11.json"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"Resp","All Average Grd":"100%","All Cov":"1 / 1 (100%)","Assertion Status Grd":"n/a","bins_json":"bin12.json"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"Qos","All Average Grd":"100%","All Cov":"2 / 2 (100%)","Assertion Status Grd":"n/a","bins_json":"bin13.json"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"cf_math_pkg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"testbench","All Average Grd":"48.37%","All Cov":"5829 / 19993 (29.16%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"master_interface0","All Average Grd":"49.33%","All Cov":"2027 / 4174 (48.56%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"activeMaster","All Average Grd":"76.52%","All Cov":"614 / 1155 (53.16%)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"activeSlave","All Average Grd":"35.7%","All Cov":"352 / 925 (38.05%)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"passiveMaster","All Average Grd":"41.96%","All Cov":"351 / 695 (50.5%)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"passiveSlave","All Average Grd":"41.96%","All Cov":"351 / 695 (50.5%)","Assertion Status Grd":"n/a"}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"slave_interface0","All Average Grd":"32.9%","All Cov":"645 / 4198 (15.36%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"activeMaster","All Average Grd":"21.85%","All Cov":"121 / 1161 (10.42%)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"activeSlave","All Average Grd":"58.14%","All Cov":"154 / 931 (16.54%)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"passiveMaster","All Average Grd":"25.29%","All Cov":"121 / 699 (17.31%)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"passiveSlave","All Average Grd":"25.29%","All Cov":"121 / 699 (17.31%)","Assertion Status Grd":"n/a"}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"master_interface1","All Average Grd":"35.33%","All Cov":"859 / 4174 (20.58%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"activeMaster","All Average Grd":"60.29%","All Cov":"240 / 1155 (20.78%)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"activeSlave","All Average Grd":"25.23%","All Cov":"159 / 925 (17.19%)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"passiveMaster","All Average Grd":"27.22%","All Cov":"147 / 695 (21.15%)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"passiveSlave","All Average Grd":"27.22%","All Cov":"147 / 695 (21.15%)","Assertion Status Grd":"n/a"}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"slave_interface1","All Average Grd":"33.64%","All Cov":"705 / 4198 (16.79%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"activeMaster","All Average Grd":"22.32%","All Cov":"132 / 1161 (11.37%)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"activeSlave","All Average Grd":"59%","All Cov":"170 / 931 (18.26%)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"passiveMaster","All Average Grd":"26.08%","All Cov":"132 / 699 (18.88%)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"passiveSlave","All Average Grd":"26.08%","All Cov":"132 / 699 (18.88%)","Assertion Status Grd":"n/a"}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"master[1]","All Average Grd":"43.21%","All Cov":"156 / 361 (43.21%)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"master[0]","All Average Grd":"76.73%","All Cov":"277 / 361 (76.73%)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"slave[1]","All Average Grd":"35.34%","All Cov":"129 / 365 (35.34%)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"slave[0]","All Average Grd":"32.33%","All Cov":"118 / 365 (32.33%)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_xbar_dut","All Average Grd":"79%","All Cov":"903 / 1784 (50.62%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_assign_mst[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_assign_mst[1]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_assign_slv[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_assign_slv[1]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_xbar","All Average Grd":"79%","All Cov":"903 / 1784 (50.62%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_slv_port_demux[0]","All Average Grd":"79.47%","All Cov":"471 / 848 (55.54%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_axi_aw_decode","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_addr_decode_dync","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_axi_ar_decode","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_addr_decode_dync","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_axi_demux","All Average Grd":"73.67%","All Cov":"403 / 764 (52.75%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_aw_spill_reg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable_i","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_spill_reg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_aw_select_spill_reg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable_i","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_spill_reg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_w_spill_reg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable_i","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_bypass","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_ar_spill_reg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable_i","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_spill_reg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_ar_sel_spill_reg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable_i","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_spill_reg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_b_spill_reg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable_i","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_bypass","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_r_spill_reg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable_i","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_bypass","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_demux_simple","All Average Grd":"73.67%","All Cov":"403 / 764 (52.75%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"genblk1","All Average Grd":"73.67%","All Cov":"403 / 764 (52.75%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_aw_id_counter","All Average Grd":"56.91%","All Cov":"155 / 328 (47.26%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_aw_id_counter","All Average Grd":"56.91%","All Cov":"155 / 328 (47.26%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_counters[0]","All Average Grd":"60.63%","All Cov":"21 / 41 (51.22%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_in_flight_cnt","All Average Grd":"60.63%","All Cov":"21 / 41 (51.22%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_transient_overflow","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_counters[1]","All Average Grd":"60.63%","All Cov":"21 / 41 (51.22%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_in_flight_cnt","All Average Grd":"60.63%","All Cov":"21 / 41 (51.22%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_transient_overflow","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_counters[2]","All Average Grd":"60.63%","All Cov":"21 / 41 (51.22%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_in_flight_cnt","All Average Grd":"60.63%","All Cov":"21 / 41 (51.22%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_transient_overflow","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_counters[3]","All Average Grd":"60.63%","All Cov":"21 / 41 (51.22%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_in_flight_cnt","All Average Grd":"60.63%","All Cov":"21 / 41 (51.22%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_transient_overflow","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_counters[4]","All Average Grd":"60.63%","All Cov":"21 / 41 (51.22%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_in_flight_cnt","All Average Grd":"60.63%","All Cov":"21 / 41 (51.22%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_transient_overflow","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_counters[5]","All Average Grd":"60.63%","All Cov":"21 / 41 (51.22%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_in_flight_cnt","All Average Grd":"60.63%","All Cov":"21 / 41 (51.22%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_transient_overflow","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_counters[6]","All Average Grd":"60.63%","All Cov":"21 / 41 (51.22%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_in_flight_cnt","All Average Grd":"60.63%","All Cov":"21 / 41 (51.22%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_transient_overflow","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_counters[7]","All Average Grd":"30.89%","All Cov":"8 / 41 (19.51%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_in_flight_cnt","All Average Grd":"30.89%","All Cov":"8 / 41 (19.51%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_transient_overflow","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_counter_open_w","All Average Grd":"52.9%","All Cov":"30 / 56 (53.57%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_counter","All Average Grd":"65.8%","All Cov":"24 / 41 (58.54%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_transient_overflow","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_b_mux","All Average Grd":"98.96%","All Cov":"25 / 26 (96.15%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_arbiter","All Average Grd":"98.96%","All Cov":"25 / 26 (96.15%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_int_rr","All Average Grd":"98.96%","All Cov":"25 / 26 (96.15%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_lock","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_fair_arb","All Average Grd":"98.96%","All Cov":"25 / 26 (96.15%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_mask[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_mask[1]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_mask[2]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_lzc_upper","All Average Grd":"97.92%","All Cov":"12 / 13 (92.31%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_lzc","All Average Grd":"100%","All Cov":"5 / 5 (100%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_index_lut[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_index_lut[1]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_index_lut[2]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_levels[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_not_last_level","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_level[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_levels[1]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_last_level","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_level[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_reduce","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_level[1]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_base","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"__assert_1","All Average Grd":"100%","All Cov":"1 / 1 (100%)","Assertion Status Grd":"100%"}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"validate_params.__assert_2","All Average Grd":"100%","All Cov":"1 / 1 (100%)","Assertion Status Grd":"100%"}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_lzc_lower","All Average Grd":"100%","All Cov":"13 / 13 (100%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_lzc","All Average Grd":"100%","All Cov":"5 / 5 (100%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_index_lut[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_index_lut[1]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_index_lut[2]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_levels[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_not_last_level","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_level[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_levels[1]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_last_level","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_level[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_reduce","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_level[1]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_base","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"__assert_1","All Average Grd":"100%","All Cov":"1 / 1 (100%)","Assertion Status Grd":"100%"}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"validate_params.__assert_2","All Average Grd":"100%","All Cov":"1 / 1 (100%)","Assertion Status Grd":"100%"}
+]}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_levels[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_level[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_other_levels","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_levels[1]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_level[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_first_level","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_reduce","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_level[1]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_first_level","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_first","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+]}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_ar_id_counter","All Average Grd":"60.63%","All Cov":"168 / 328 (51.22%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_ar_id_counter","All Average Grd":"60.63%","All Cov":"168 / 328 (51.22%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_counters[0]","All Average Grd":"60.63%","All Cov":"21 / 41 (51.22%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_in_flight_cnt","All Average Grd":"60.63%","All Cov":"21 / 41 (51.22%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_transient_overflow","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_counters[1]","All Average Grd":"60.63%","All Cov":"21 / 41 (51.22%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_in_flight_cnt","All Average Grd":"60.63%","All Cov":"21 / 41 (51.22%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_transient_overflow","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_counters[2]","All Average Grd":"60.63%","All Cov":"21 / 41 (51.22%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_in_flight_cnt","All Average Grd":"60.63%","All Cov":"21 / 41 (51.22%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_transient_overflow","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_counters[3]","All Average Grd":"60.63%","All Cov":"21 / 41 (51.22%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_in_flight_cnt","All Average Grd":"60.63%","All Cov":"21 / 41 (51.22%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_transient_overflow","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_counters[4]","All Average Grd":"60.63%","All Cov":"21 / 41 (51.22%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_in_flight_cnt","All Average Grd":"60.63%","All Cov":"21 / 41 (51.22%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_transient_overflow","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_counters[5]","All Average Grd":"60.63%","All Cov":"21 / 41 (51.22%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_in_flight_cnt","All Average Grd":"60.63%","All Cov":"21 / 41 (51.22%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_transient_overflow","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_counters[6]","All Average Grd":"60.63%","All Cov":"21 / 41 (51.22%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_in_flight_cnt","All Average Grd":"60.63%","All Cov":"21 / 41 (51.22%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_transient_overflow","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_counters[7]","All Average Grd":"60.63%","All Cov":"21 / 41 (51.22%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_in_flight_cnt","All Average Grd":"60.63%","All Cov":"21 / 41 (51.22%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_transient_overflow","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_r_mux","All Average Grd":"98.96%","All Cov":"25 / 26 (96.15%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_arbiter","All Average Grd":"98.96%","All Cov":"25 / 26 (96.15%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_int_rr","All Average Grd":"98.96%","All Cov":"25 / 26 (96.15%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_lock","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_fair_arb","All Average Grd":"98.96%","All Cov":"25 / 26 (96.15%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_mask[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_mask[1]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_mask[2]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_lzc_upper","All Average Grd":"97.92%","All Cov":"12 / 13 (92.31%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_lzc","All Average Grd":"100%","All Cov":"5 / 5 (100%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_index_lut[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_index_lut[1]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_index_lut[2]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_levels[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_not_last_level","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_level[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_levels[1]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_last_level","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_level[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_reduce","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_level[1]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_base","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"__assert_1","All Average Grd":"100%","All Cov":"1 / 1 (100%)","Assertion Status Grd":"100%"}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"validate_params.__assert_2","All Average Grd":"100%","All Cov":"1 / 1 (100%)","Assertion Status Grd":"100%"}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_lzc_lower","All Average Grd":"100%","All Cov":"13 / 13 (100%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_lzc","All Average Grd":"100%","All Cov":"5 / 5 (100%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_index_lut[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_index_lut[1]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_index_lut[2]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_levels[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_not_last_level","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_level[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_levels[1]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_last_level","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_level[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_reduce","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_level[1]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_base","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"__assert_1","All Average Grd":"100%","All Cov":"1 / 1 (100%)","Assertion Status Grd":"100%"}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"validate_params.__assert_2","All Average Grd":"100%","All Cov":"1 / 1 (100%)","Assertion Status Grd":"100%"}
+]}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_levels[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_level[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_other_levels","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_levels[1]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_level[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_first_level","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_reduce","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_level[1]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_first_level","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_first","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+]}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_b_channels[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_b_channels[1]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_b_channels[2]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_axi_err_slv","All Average Grd":"85.27%","All Cov":"68 / 84 (80.95%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"genblk1","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_atop_filter","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"r_resp_cmd","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_w_fifo","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_fifo","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_b_fifo","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_fifo","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_r_fifo","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_fifo","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_r_counter","All Average Grd":"85.27%","All Cov":"68 / 84 (80.95%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_counter","All Average Grd":"83.59%","All Cov":"48 / 61 (78.69%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_transient_overflow","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_slv_port_demux[1]","All Average Grd":"42.76%","All Cov":"352 / 848 (41.51%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_axi_aw_decode","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_addr_decode_dync","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_axi_ar_decode","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_addr_decode_dync","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_axi_demux","All Average Grd":"68.26%","All Cov":"343 / 764 (44.9%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_aw_spill_reg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable_i","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_spill_reg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_aw_select_spill_reg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable_i","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_spill_reg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_w_spill_reg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable_i","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_bypass","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_ar_spill_reg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable_i","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_spill_reg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_ar_sel_spill_reg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable_i","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_spill_reg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_b_spill_reg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable_i","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_bypass","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_r_spill_reg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable_i","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_bypass","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_demux_simple","All Average Grd":"68.26%","All Cov":"343 / 764 (44.9%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"genblk1","All Average Grd":"68.26%","All Cov":"343 / 764 (44.9%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_aw_id_counter","All Average Grd":"56.91%","All Cov":"155 / 328 (47.26%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_aw_id_counter","All Average Grd":"56.91%","All Cov":"155 / 328 (47.26%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_counters[0]","All Average Grd":"60.63%","All Cov":"21 / 41 (51.22%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_in_flight_cnt","All Average Grd":"60.63%","All Cov":"21 / 41 (51.22%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_transient_overflow","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_counters[1]","All Average Grd":"60.63%","All Cov":"21 / 41 (51.22%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_in_flight_cnt","All Average Grd":"60.63%","All Cov":"21 / 41 (51.22%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_transient_overflow","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_counters[2]","All Average Grd":"60.63%","All Cov":"21 / 41 (51.22%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_in_flight_cnt","All Average Grd":"60.63%","All Cov":"21 / 41 (51.22%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_transient_overflow","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_counters[3]","All Average Grd":"60.63%","All Cov":"21 / 41 (51.22%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_in_flight_cnt","All Average Grd":"60.63%","All Cov":"21 / 41 (51.22%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_transient_overflow","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_counters[4]","All Average Grd":"30.89%","All Cov":"8 / 41 (19.51%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_in_flight_cnt","All Average Grd":"30.89%","All Cov":"8 / 41 (19.51%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_transient_overflow","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_counters[5]","All Average Grd":"60.63%","All Cov":"21 / 41 (51.22%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_in_flight_cnt","All Average Grd":"60.63%","All Cov":"21 / 41 (51.22%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_transient_overflow","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_counters[6]","All Average Grd":"60.63%","All Cov":"21 / 41 (51.22%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_in_flight_cnt","All Average Grd":"60.63%","All Cov":"21 / 41 (51.22%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_transient_overflow","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_counters[7]","All Average Grd":"60.63%","All Cov":"21 / 41 (51.22%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_in_flight_cnt","All Average Grd":"60.63%","All Cov":"21 / 41 (51.22%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_transient_overflow","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_counter_open_w","All Average Grd":"42.79%","All Cov":"24 / 56 (42.86%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_counter","All Average Grd":"58.91%","All Cov":"20 / 41 (48.78%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_transient_overflow","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_b_mux","All Average Grd":"98.96%","All Cov":"25 / 26 (96.15%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_arbiter","All Average Grd":"98.96%","All Cov":"25 / 26 (96.15%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_int_rr","All Average Grd":"98.96%","All Cov":"25 / 26 (96.15%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_lock","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_fair_arb","All Average Grd":"98.96%","All Cov":"25 / 26 (96.15%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_mask[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_mask[1]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_mask[2]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_lzc_upper","All Average Grd":"97.92%","All Cov":"12 / 13 (92.31%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_lzc","All Average Grd":"100%","All Cov":"5 / 5 (100%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_index_lut[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_index_lut[1]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_index_lut[2]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_levels[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_not_last_level","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_level[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_levels[1]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_last_level","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_level[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_reduce","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_level[1]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_base","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"__assert_1","All Average Grd":"100%","All Cov":"1 / 1 (100%)","Assertion Status Grd":"100%"}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"validate_params.__assert_2","All Average Grd":"100%","All Cov":"1 / 1 (100%)","Assertion Status Grd":"100%"}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_lzc_lower","All Average Grd":"100%","All Cov":"13 / 13 (100%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_lzc","All Average Grd":"100%","All Cov":"5 / 5 (100%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_index_lut[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_index_lut[1]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_index_lut[2]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_levels[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_not_last_level","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_level[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_levels[1]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_last_level","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_level[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_reduce","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_level[1]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_base","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"__assert_1","All Average Grd":"100%","All Cov":"1 / 1 (100%)","Assertion Status Grd":"100%"}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"validate_params.__assert_2","All Average Grd":"100%","All Cov":"1 / 1 (100%)","Assertion Status Grd":"100%"}
+]}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_levels[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_level[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_other_levels","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_levels[1]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_level[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_first_level","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_reduce","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_level[1]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_first_level","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_first","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+]}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_ar_id_counter","All Average Grd":"45.76%","All Cov":"116 / 328 (35.37%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_ar_id_counter","All Average Grd":"45.76%","All Cov":"116 / 328 (35.37%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_counters[0]","All Average Grd":"30.89%","All Cov":"8 / 41 (19.51%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_in_flight_cnt","All Average Grd":"30.89%","All Cov":"8 / 41 (19.51%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_transient_overflow","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_counters[1]","All Average Grd":"60.63%","All Cov":"21 / 41 (51.22%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_in_flight_cnt","All Average Grd":"60.63%","All Cov":"21 / 41 (51.22%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_transient_overflow","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_counters[2]","All Average Grd":"60.63%","All Cov":"21 / 41 (51.22%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_in_flight_cnt","All Average Grd":"60.63%","All Cov":"21 / 41 (51.22%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_transient_overflow","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_counters[3]","All Average Grd":"60.63%","All Cov":"21 / 41 (51.22%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_in_flight_cnt","All Average Grd":"60.63%","All Cov":"21 / 41 (51.22%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_transient_overflow","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_counters[4]","All Average Grd":"30.89%","All Cov":"8 / 41 (19.51%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_in_flight_cnt","All Average Grd":"30.89%","All Cov":"8 / 41 (19.51%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_transient_overflow","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_counters[5]","All Average Grd":"30.89%","All Cov":"8 / 41 (19.51%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_in_flight_cnt","All Average Grd":"30.89%","All Cov":"8 / 41 (19.51%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_transient_overflow","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_counters[6]","All Average Grd":"30.89%","All Cov":"8 / 41 (19.51%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_in_flight_cnt","All Average Grd":"30.89%","All Cov":"8 / 41 (19.51%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_transient_overflow","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_counters[7]","All Average Grd":"60.63%","All Cov":"21 / 41 (51.22%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_in_flight_cnt","All Average Grd":"60.63%","All Cov":"21 / 41 (51.22%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_transient_overflow","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_r_mux","All Average Grd":"96.88%","All Cov":"23 / 26 (88.46%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_arbiter","All Average Grd":"96.88%","All Cov":"23 / 26 (88.46%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_int_rr","All Average Grd":"96.88%","All Cov":"23 / 26 (88.46%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_lock","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_fair_arb","All Average Grd":"96.88%","All Cov":"23 / 26 (88.46%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_mask[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_mask[1]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_mask[2]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_lzc_upper","All Average Grd":"95.83%","All Cov":"11 / 13 (84.62%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_lzc","All Average Grd":"100%","All Cov":"5 / 5 (100%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_index_lut[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_index_lut[1]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_index_lut[2]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_levels[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_not_last_level","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_level[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_levels[1]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_last_level","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_level[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_reduce","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_level[1]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_base","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"__assert_1","All Average Grd":"100%","All Cov":"1 / 1 (100%)","Assertion Status Grd":"100%"}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"validate_params.__assert_2","All Average Grd":"100%","All Cov":"1 / 1 (100%)","Assertion Status Grd":"100%"}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_lzc_lower","All Average Grd":"97.92%","All Cov":"12 / 13 (92.31%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_lzc","All Average Grd":"100%","All Cov":"5 / 5 (100%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_index_lut[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_index_lut[1]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_index_lut[2]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_levels[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_not_last_level","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_level[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_levels[1]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_last_level","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_level[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_reduce","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_level[1]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_base","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"__assert_1","All Average Grd":"100%","All Cov":"1 / 1 (100%)","Assertion Status Grd":"100%"}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"validate_params.__assert_2","All Average Grd":"100%","All Cov":"1 / 1 (100%)","Assertion Status Grd":"100%"}
+]}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_levels[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_level[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_other_levels","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_levels[1]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_level[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_first_level","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_reduce","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_level[1]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_first_level","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_first","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+]}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_b_channels[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_b_channels[1]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_b_channels[2]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_axi_err_slv","All Average Grd":"17.27%","All Cov":"9 / 84 (10.71%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"genblk1","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_atop_filter","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"r_resp_cmd","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_w_fifo","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_fifo","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_b_fifo","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_fifo","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_r_fifo","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_fifo","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_r_counter","All Average Grd":"17.27%","All Cov":"9 / 84 (10.71%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_counter","All Average Grd":"30.19%","All Cov":"8 / 61 (13.11%)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_transient_overflow","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_xbar_slv_cross[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_xbar_mst_cross[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_connection","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_axi_multicut_xbar_pipeline","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_axi_cut","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_axi_cuts[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_cut","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_reg_aw","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable_i","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_spill_reg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_reg_w","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable_i","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_spill_reg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_reg_b","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable_i","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_spill_reg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_reg_ar","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable_i","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_spill_reg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_reg_r","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable_i","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_spill_reg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+]}
+]}
+]}
+]}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_xbar_mst_cross[1]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_connection","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_axi_multicut_xbar_pipeline","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_axi_cut","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_axi_cuts[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_cut","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_reg_aw","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable_i","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_spill_reg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_reg_w","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable_i","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_spill_reg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_reg_b","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable_i","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_spill_reg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_reg_ar","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable_i","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_spill_reg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_reg_r","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable_i","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_spill_reg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+]}
+]}
+]}
+]}
+]}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_xbar_slv_cross[1]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_xbar_mst_cross[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_connection","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_axi_multicut_xbar_pipeline","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_axi_cut","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_axi_cuts[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_cut","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_reg_aw","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable_i","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_spill_reg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_reg_w","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable_i","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_spill_reg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_reg_b","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable_i","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_spill_reg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_reg_ar","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable_i","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_spill_reg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_reg_r","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable_i","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_spill_reg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+]}
+]}
+]}
+]}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_xbar_mst_cross[1]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_connection","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_axi_multicut_xbar_pipeline","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_axi_cut","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_axi_cuts[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_cut","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_reg_aw","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable_i","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_spill_reg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_reg_w","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable_i","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_spill_reg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_reg_b","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable_i","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_spill_reg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_reg_ar","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable_i","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_spill_reg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_reg_r","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable_i","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_spill_reg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+]}
+]}
+]}
+]}
+]}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_mst_port_mux[0]","All Average Grd":"96.88%","All Cov":"40 / 44 (90.91%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_axi_mux","All Average Grd":"96.88%","All Cov":"40 / 44 (90.91%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_mux","All Average Grd":"96.88%","All Cov":"40 / 44 (90.91%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_id_prepend[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_id_prepend","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_id_prepend[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_prepend","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_id_prepend[1]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_id_prepend","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_id_prepend[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_prepend","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_aw_arbiter","All Average Grd":"96.88%","All Cov":"20 / 22 (90.91%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_arbiter","All Average Grd":"96.88%","All Cov":"20 / 22 (90.91%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_int_rr","All Average Grd":"96.88%","All Cov":"20 / 22 (90.91%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_lock","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_fair_arb","All Average Grd":"96.88%","All Cov":"20 / 22 (90.91%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_mask[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_mask[1]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_lzc_upper","All Average Grd":"93.75%","All Cov":"9 / 11 (81.82%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_lzc","All Average Grd":"100%","All Cov":"5 / 5 (100%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_index_lut[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_index_lut[1]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_levels[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_last_level","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_level[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_reduce","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"__assert_1","All Average Grd":"100%","All Cov":"1 / 1 (100%)","Assertion Status Grd":"100%"}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"validate_params.__assert_2","All Average Grd":"100%","All Cov":"1 / 1 (100%)","Assertion Status Grd":"100%"}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_lzc_lower","All Average Grd":"100%","All Cov":"11 / 11 (100%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_lzc","All Average Grd":"100%","All Cov":"5 / 5 (100%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_index_lut[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_index_lut[1]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_levels[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_last_level","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_level[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_reduce","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"__assert_1","All Average Grd":"100%","All Cov":"1 / 1 (100%)","Assertion Status Grd":"100%"}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"validate_params.__assert_2","All Average Grd":"100%","All Cov":"1 / 1 (100%)","Assertion Status Grd":"100%"}
+]}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_levels[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_level[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_first_level","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_reduce","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+]}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_w_fifo","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_fifo","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_aw_spill_reg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable_i","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_spill_reg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_w_spill_reg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable_i","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_bypass","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_b_spill_reg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable_i","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_bypass","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_ar_arbiter","All Average Grd":"96.88%","All Cov":"20 / 22 (90.91%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_arbiter","All Average Grd":"96.88%","All Cov":"20 / 22 (90.91%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_int_rr","All Average Grd":"96.88%","All Cov":"20 / 22 (90.91%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_lock","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_fair_arb","All Average Grd":"96.88%","All Cov":"20 / 22 (90.91%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_mask[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_mask[1]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_lzc_upper","All Average Grd":"93.75%","All Cov":"9 / 11 (81.82%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_lzc","All Average Grd":"100%","All Cov":"5 / 5 (100%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_index_lut[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_index_lut[1]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_levels[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_last_level","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_level[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_reduce","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"__assert_1","All Average Grd":"100%","All Cov":"1 / 1 (100%)","Assertion Status Grd":"100%"}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"validate_params.__assert_2","All Average Grd":"100%","All Cov":"1 / 1 (100%)","Assertion Status Grd":"100%"}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_lzc_lower","All Average Grd":"100%","All Cov":"11 / 11 (100%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_lzc","All Average Grd":"100%","All Cov":"5 / 5 (100%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_index_lut[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_index_lut[1]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_levels[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_last_level","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_level[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_reduce","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"__assert_1","All Average Grd":"100%","All Cov":"1 / 1 (100%)","Assertion Status Grd":"100%"}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"validate_params.__assert_2","All Average Grd":"100%","All Cov":"1 / 1 (100%)","Assertion Status Grd":"100%"}
+]}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_levels[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_level[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_first_level","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_reduce","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+]}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_ar_spill_reg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable_i","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_spill_reg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_r_spill_reg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable_i","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_bypass","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+]}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_mst_port_mux[1]","All Average Grd":"96.88%","All Cov":"40 / 44 (90.91%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_axi_mux","All Average Grd":"96.88%","All Cov":"40 / 44 (90.91%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_mux","All Average Grd":"96.88%","All Cov":"40 / 44 (90.91%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_id_prepend[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_id_prepend","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_id_prepend[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_prepend","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_id_prepend[1]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_id_prepend","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_id_prepend[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_prepend","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_aw_arbiter","All Average Grd":"96.88%","All Cov":"20 / 22 (90.91%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_arbiter","All Average Grd":"96.88%","All Cov":"20 / 22 (90.91%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_int_rr","All Average Grd":"96.88%","All Cov":"20 / 22 (90.91%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_lock","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_fair_arb","All Average Grd":"96.88%","All Cov":"20 / 22 (90.91%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_mask[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_mask[1]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_lzc_upper","All Average Grd":"93.75%","All Cov":"9 / 11 (81.82%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_lzc","All Average Grd":"100%","All Cov":"5 / 5 (100%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_index_lut[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_index_lut[1]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_levels[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_last_level","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_level[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_reduce","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"__assert_1","All Average Grd":"100%","All Cov":"1 / 1 (100%)","Assertion Status Grd":"100%"}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"validate_params.__assert_2","All Average Grd":"100%","All Cov":"1 / 1 (100%)","Assertion Status Grd":"100%"}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_lzc_lower","All Average Grd":"100%","All Cov":"11 / 11 (100%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_lzc","All Average Grd":"100%","All Cov":"5 / 5 (100%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_index_lut[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_index_lut[1]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_levels[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_last_level","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_level[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_reduce","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"__assert_1","All Average Grd":"100%","All Cov":"1 / 1 (100%)","Assertion Status Grd":"100%"}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"validate_params.__assert_2","All Average Grd":"100%","All Cov":"1 / 1 (100%)","Assertion Status Grd":"100%"}
+]}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_levels[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_level[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_first_level","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_reduce","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+]}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_w_fifo","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_fifo","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_aw_spill_reg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable_i","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_spill_reg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_w_spill_reg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable_i","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_bypass","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_b_spill_reg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable_i","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_bypass","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_ar_arbiter","All Average Grd":"96.88%","All Cov":"20 / 22 (90.91%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_arbiter","All Average Grd":"96.88%","All Cov":"20 / 22 (90.91%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_int_rr","All Average Grd":"96.88%","All Cov":"20 / 22 (90.91%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_lock","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_fair_arb","All Average Grd":"96.88%","All Cov":"20 / 22 (90.91%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_mask[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_mask[1]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_lzc_upper","All Average Grd":"93.75%","All Cov":"9 / 11 (81.82%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_lzc","All Average Grd":"100%","All Cov":"5 / 5 (100%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_index_lut[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_index_lut[1]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_levels[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_last_level","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_level[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_reduce","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"__assert_1","All Average Grd":"100%","All Cov":"1 / 1 (100%)","Assertion Status Grd":"100%"}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"validate_params.__assert_2","All Average Grd":"100%","All Cov":"1 / 1 (100%)","Assertion Status Grd":"100%"}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_lzc_lower","All Average Grd":"100%","All Cov":"11 / 11 (100%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_lzc","All Average Grd":"100%","All Cov":"5 / 5 (100%)","Assertion Status Grd":"100%","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_index_lut[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_index_lut[1]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_levels[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_last_level","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_level[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"g_reduce","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"__assert_1","All Average Grd":"100%","All Cov":"1 / 1 (100%)","Assertion Status Grd":"100%"}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"validate_params.__assert_2","All Average Grd":"100%","All Cov":"1 / 1 (100%)","Assertion Status Grd":"100%"}
+]}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_levels[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_level[0]","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_first_level","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_reduce","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+]}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_ar_spill_reg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable_i","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_spill_reg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+,{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"i_r_spill_reg","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"spill_register_flushable_i","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a","children"
+:[{"expanded":false,"Exclusion Rule Type":"None","UNR":"none","title":"gen_bypass","All Average Grd":"n/a","All Cov":"0 / 0 (n/a)","Assertion Status Grd":"n/a"}
+]}
+]}
+]}
+]}
+]}
+]}
+]}
+]}
+]}
+]}
+]

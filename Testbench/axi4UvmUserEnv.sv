@@ -49,6 +49,7 @@ class axi4UvmUserEnv extends uvm_env;
       activeMasterCfg.no_changes_in_address_channels_limit = 100;
       activeMasterCfg.max_write_bursts_behavior = CDN_AXI_CFG_MAX_WRITE_BURSTS_BEHAVIOR_CONTINUE_TO_SEND;
       activeMasterCfg.write_issuing_capability = 7;
+      
       //activeMasterCfg.       
       uvm_config_object::set(this,"activeMaster","cfg",activeMasterCfg); 
        

@@ -161,12 +161,12 @@ class blockingNonBlockingTest extends axi4UvmUserTest;
 
 endclass : blockingNonBlockingTest
 
-class read_after_write_test extends axi4UvmUserTest;
+class read_after_write_fixed_burst_test extends axi4UvmUserTest;
 	
-	`uvm_component_utils_begin(read_after_write_test)
+	`uvm_component_utils_begin(read_after_write_fixed_burst_test)
 	`uvm_component_utils_end
 
-	function new(string name = "read_after_write_test",uvm_component parent);
+	function new(string name = "read_after_write_fixed_burst_test",uvm_component parent);
 		super.new(name,parent); 
 	endfunction : new
 
@@ -174,11 +174,30 @@ class read_after_write_test extends axi4UvmUserTest;
 		super.build_phase(phase); 
 		
 		//set the starting sequence to system      
-		 uvm_config_db#(uvm_object_wrapper)::set(this, "axiSve0.vs.run_phase", "default_sequence",read_after_write_seq::type_id::get());
+		 uvm_config_db#(uvm_object_wrapper)::set(this, "axiSve0.vs.run_phase", "default_sequence",read_after_write_fixed_burst_seq::type_id::get());
 		
 	endfunction : build_phase 
 
-endclass : read_after_write_test
+endclass : read_after_write_fixed_burst_test
+//
+class read_after_write_incr_burst_test extends axi4UvmUserTest;
+	
+	`uvm_component_utils_begin(read_after_write_incr_burst_test)
+	`uvm_component_utils_end
+
+	function new(string name = "read_after_write_incr_burst_test",uvm_component parent);
+		super.new(name,parent); 
+	endfunction : new
+
+	virtual function void build_phase(uvm_phase phase);
+		super.build_phase(phase); 
+		
+		//set the starting sequence to system      
+		 uvm_config_db#(uvm_object_wrapper)::set(this, "axiSve0.vs.run_phase", "default_sequence",read_after_write_incr_burst_seq::type_id::get());
+		
+	endfunction : build_phase 
+
+endclass : read_after_write_incr_burst_test
 
 class wrRespReorderTest extends axi4UvmUserTest;
 	
@@ -623,7 +642,6 @@ class write_using_sameID_tag_test extends axi4UvmUserTest;
 	endfunction : build_phase 
 
 endclass : write_using_sameID_tag_test
-
 
 class read_axi_test extends axi4UvmUserTest;
 	
